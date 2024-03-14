@@ -100,61 +100,22 @@
 
 /* row about us */
 
-.row{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 50px 20px 0;
+.aboutus-title span{
+    font-size: 25px;
 }
 
-.row-left,
-.row-right{
-    flex: 1;
-    min-width: 500px;
-    margin: 0 60px;
-}
-
-.row-aboutus{
-    flex-direction: row;
-}
-
-.row-aboutus-left{
-    margin: 100px;
-}
-
-.row-aboutus-right{
-    margin: 100px;
-}
-
-.paragraph{
-    font-size: 40px;
+.row-abouts .paragraph{
+    font-size: 30px;
     margin: 50px 0;
     line-height: 90px;
 }
 
-
-.row-aboutus-left-title{
-    display: flex;
-}
-
-.row-aboutus-left-title > h3{
-    margin-right:80px;
-    font-size: 20px;
-}
-
-.row-aboutus-left-title > h3 > span{
-    margin-right: 20px;
-}
-
-
-.row-aboutus-right > img{
-    width: 100%;
+.row-abouts img{
+    width: 80%;
     border-radius: 50px 0;
 }
 
-/* row room */
+/* title row */
 .title-row{
     display: flex;
     flex-direction: column;
@@ -162,6 +123,8 @@
 }
 .title-row > h1{
     font-family: 'Shelia VNF';
+    width: 60%;
+    text-align: center;
     font-size: 70px;
     margin: 50px;
 }
@@ -170,7 +133,10 @@
     width: 60%;
     font-size: 20px;
     line-height: 50px;
+    text-align: center;
 }
+
+/* row room */
 
 .list-room{
     display: flex;
@@ -182,7 +148,7 @@
 .room-item{
     display: inline-block;
     min-width: 300px;
-    max-width: 400px;
+    max-width: 350px;
     border-radius: 20px;
     box-shadow: 0 10px 45px rgba(10, 10, 10, 0.07);
     margin: 40px;
@@ -254,9 +220,11 @@
 }
 
 /* row extension */
-.extension{
-    width: 100%;
+.row-extension h3{
+    font-size: 25px;
+    margin: 10px 0;
 }
+
 .list-extension{
     width: 100%;
     display: flex;
@@ -326,6 +294,7 @@
 }
 
 .content-service > h1{
+    font-weight: 600;
     font-size: 30px;
     margin: 50px 0;
 }

@@ -1,0 +1,414 @@
+
+/* banner */
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+    justify-content: space-around;
+}
+
+.banner-title > *{
+    display: flex;
+    justify-content: center;
+}
+
+.banner-title > h1{
+    font-size: 50px;
+    font-family: 'Shelia VNF';
+    color: #fff;
+    font-size: 100px; 
+}
+
+.banner-title > span{
+    font-size: 30px;
+    margin-top: 50px;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+}
+
+.search-room{
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    flex-wrap: wrap;
+}
+
+.form-group{
+    flex: 1;
+    background-color: #fff;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    min-width: 200px;
+    max-width: 250px;
+    min-height: 100px;
+}
+
+.form-group-price{
+    min-width: 300px;
+}
+
+.form-group label{
+    font-size: 15px;
+    margin: 10px 0;
+    font-weight: 500;
+    font-family: "Jost", sans-serif;
+    color: #929292;
+}
+
+.value-space{
+    width: 100%;
+}
+
+#check-in,
+#check-out,
+.amount,
+.price{
+    width: 100%;
+    min-height: 30px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+
+.combobox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-button{
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0);
+
+}
+
+.button-submit{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: red;
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid #fff;
+}
+
+/* row about us */
+
+.row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 20px 0;
+}
+
+.row-left,
+.row-right{
+    flex: 1;
+    min-width: 500px;
+    margin: 0 60px;
+}
+
+.row-aboutus{
+    flex-direction: row;
+}
+
+.row-aboutus-left{
+    margin: 100px;
+}
+
+.row-aboutus-right{
+    margin: 100px;
+}
+
+.paragraph{
+    font-size: 40px;
+    margin: 50px 0;
+    line-height: 90px;
+}
+
+
+.row-aboutus-left-title{
+    display: flex;
+}
+
+.row-aboutus-left-title > h3{
+    margin-right:80px;
+    font-size: 20px;
+}
+
+.row-aboutus-left-title > h3 > span{
+    margin-right: 20px;
+}
+
+
+.row-aboutus-right > img{
+    width: 100%;
+    border-radius: 50px 0;
+}
+
+/* row room */
+.title-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title-row > h1{
+    font-family: 'Shelia VNF';
+    font-size: 70px;
+    margin: 50px;
+}
+
+.title-row > p{
+    width: 60%;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.list-room{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.room-item{
+    display: inline-block;
+    min-width: 300px;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 10px 45px rgba(10, 10, 10, 0.07);
+    margin: 40px;
+    flex: 1;
+}
+
+.room-item:hover{
+    transition: transform 0.8s ease-in-out;
+}
+
+.room-image{
+    border-radius: 20px 20px 0 0;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.room-price{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    z-index: 10;
+}
+
+.room-image > img {
+    transition: transform 0.8s ease-in-out;
+}
+
+
+
+.room-image > img:hover{
+    transform: scale(1.5);
+}
+
+.room-image > .room-sale{
+    position: absolute;
+    background-color: #e45154;
+}
+
+.room-content{
+    margin: 50px 30px;
+}
+
+.name-room{
+    font-size: 25px;
+}
+
+.parameter-room{
+    display: flex;
+    justify-content: space-between;
+}
+
+.parameter-room .num-of{
+    margin: 30px 10px;
+    font-size: 20px;
+}
+
+.see-more-room{
+    border: none;
+}
+
+.see-more-all-room *{
+    font-size: 20px;
+}
+
+/* row extension */
+.extension{
+    width: 100%;
+}
+.list-extension{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item-extension{
+    display: inline-block;
+    width: 15%;
+    margin: 50px;
+}
+
+.item-ext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-ext > img{
+    width: 80px;
+}
+
+.item-ext > h3{
+    font-weight: 100;
+}
+
+/* row video hotel */
+
+.video-hotel{
+    border-radius: 80px 0 80px 0;
+    width: 80vw;
+}
+
+/* row service */
+
+.row-service{
+    background-color: #f9f9f9, ;
+    border-radius: 50px;
+}
+
+.list-service{
+    display: flex;
+    flex-direction: column;
+}
+
+.item-service{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.item-service-even{
+    flex-wrap: wrap-reverse;
+}
+
+.content-service{
+    flex: 4;
+    margin: 50px;
+    min-width: 400px;
+}
+
+.image-service{
+    flex: 6;
+    margin: 50px;
+    min-width: 600px;
+}
+
+.content-service > h1{
+    font-size: 30px;
+    margin: 50px 0;
+}
+
+.content-service > p{
+    font-size: 20px;
+    line-height: 50px;
+    margin: 50px 0;
+    text-align: justify;
+}
+
+.image-service > img{
+    border-radius: 20px;
+    width: 100%;
+}
+
+/* row news */
+.row-news{
+    
+}
+
+.list-news{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.news-item{
+    display: block;
+    max-width: 300px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.news-item img{
+    transition: transform 0.8s ease-in-out;
+}
+
+.news-item:hover img{
+    transform: scale(1.5);
+}
+
+.news-item:hover .news-content{
+    opacity: 0.7;
+}
+
+.news-content {
+    top: 0;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    z-index: 10;
+    background-color: black;
+    color: white;
+    transition: opacity 0.8s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-content *{
+    color: white;
+    max-width: 80%;
+    margin: 10px;
+}
+
+.news-title{
+    font-size: 25px;
+    line-height: 35px;
+    text-align: center;  
+}
+
+.see-more-all-news *{
+    font-size: 20px;
+}
+
+.see-more-all-news{
+    margin: 30px;
+}
+
+

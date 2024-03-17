@@ -123,6 +123,22 @@ img{
 
 }
 
+.wrapper_service{
+    background-image: url(../images/resort.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    z-index: 0;
+    position: relative;
+    height: 120vh;
+    min-width: 800px;
+    margin: 40px;
+
+}
+
 .wrapper::before{
     width: 100%;
     position: absolute;

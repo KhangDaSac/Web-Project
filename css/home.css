@@ -1,3 +1,17 @@
+.wrapper{
+    background-image: url(../images/home-resort-hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    z-index: 0;
+    position: relative;
+    height: 120vh;
+    min-width: 800px;
+    margin: 40px;
+}
 
 /* banner */
 .banner-content{
@@ -15,7 +29,7 @@
 
 .banner-title > h1{
     font-size: 50px;
-    font-family: 'Shelia VNF';
+    font-family: 'SheliaVNF';
     color: #fff;
     font-size: 100px; 
 }

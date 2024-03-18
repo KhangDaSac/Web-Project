@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Jost", sans-serif;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+.font-white{
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* see-more */
+.see-more{
+    display: inline-block;
+    padding: 10px 0;
+    margin: 10px;
+}
+
+.see-more span{
+    margin-right: 15px;
+}
+
+.see-more > a{
+    color: black;
+    font-size: 15px;
+}
+
+.line-see-more{
+    height: 1px;
+    margin-top: 10px;
+    width: 0%;
+    background-color: #000;
+    transition: width 0.5s ease-in-out;
+}
+
+.see-more:hover .line-see-more{
+    width: 100%;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container > *{
+    width: 95vw;
+}
+
+/* dynamic navbar */
+#dynamic-navbar{
+    position: fixed;
+    background-color: black;
+    top: 0;
+    height: 80px;
+    z-index: 20;
+    width: 100%;
+    transform: translateY(-80px);
+}
+
+#dynamic-navbar > .menu-list{
+    align-items: center;
+    height: 100%;
+}
+
+
+@keyframes showNavbar{
+    0%{
+        transform: translateY(-80px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes hiddenNavbar{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-80px);
+    }
+}
+
+/* wrapper */
+.wrapper{
+    background-image: url(../images/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    z-index: 0;
+    position: relative;
+    height: 120vh;
+    min-width: 800px;
+    margin: 40px;
+}
+
+.wrapper::before{
+    width: 100%;
+    position: absolute;
+    content: "";
+    height: 344px;
+    opacity: 1;
+    background: linear-gradient(black, rgba(0, 0, 0, 0));
+    border-radius: 20px;
+    z-index: -5;
+} 
+
+.wrapper::after{
+    width: 100%;
+    position: absolute;
+    content: "";
+    height: 344px;
+    opacity: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0), black);
+    border-radius: 20px;
+    z-index: -5;
+    bottom: 0;
+}
+
+.header-top-item{
+    display: flex;
+    justify-content: start;
+}
+
+.header-top-item > a{
+    display: block;
+    color: #fff;
+    font-size: 15px;
+    margin: 20px;
+}
+
+.menu-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100px;
+}
+
+.menu-item > a{
+    color: #fff;
+    display: block;
+    font-size: 15px;
+    padding: 20px;
+    margin: 20px;
+    font-weight: 700;
+    z-index: 20;
+    min-width: 80px;
+}
+
+.menu-item-logo > a{
+    min-width: 200px;
+    max-width: 250px;
+}
+
+.menu-item-login > a{
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+/* row footer */
+.footer{
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #fff;
+    padding: 30px 20px;
+    border-radius: 50px;
+    font-size: 18px;
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.footer-item > *{
+    margin: 20px;
+}
+
+.footer-item-content-title{
+    font-weight: 700;
+}
+
+.social > i{
+    width: 15%;
+    margin: 10px;
+}
+
+.footer-img > img{
+    width: 60%;
+}
+
+/* banner */
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+    justify-content: space-around;
+}
+
+.banner-title > *{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.banner-title > h1{
+    font-size: 30px;
+    font-family: Verdana, sans-serif;
+    color: #fff;
+    font-size: 65px; 
+}
+
+.banner-title > span{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+}
+
+.search-room{
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    flex-wrap: wrap;
+}
+
+.form-group{
+    flex: 1;
+    background-color: #fff;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    min-width: 200px;
+    max-width: 250px;
+    min-height: 100px;
+}
+
+.form-group-price{
+    min-width: 300px;
+}
+
+.form-group label{
+    font-size: 15px;
+    margin: 10px 0;
+    font-weight: 500;
+    font-family: "Jost", sans-serif;
+    color: #929292;
+}
+
+.value-space{
+    width: 100%;
+}
+
+#check-in,
+#check-out,
+.amount,
+.price{
+    width: 100%;
+    min-height: 30px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+
+.combobox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-button{
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0);
+
+}
+
+.button-submit{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: red;
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid #fff;
+}
+/* card */
+.banner-content .main-card{
+    display: flex;
+    color: #fff;
+    width: 100%;
+    justify-content: center;
+    background-color: rgb(40, 32, 32);
+    /* padding-bottom: 10px; */
+    border-radius: 0px 0px 20px 20px;
+}
+
+.banner-content .main-card .card-content{
+    width: 25%;
+    margin: 50px;
+}
+
+.banner-content .main-card .card-content h1{
+    margin-bottom: 30px;
+}
+
+.banner-content .main-card .card-content p{
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.banner-content .main-card .card-content a{
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: white;
+}
+.banner-content .main-card .card-content .icon{
+   background-color: #fff;
+   width: 80px;
+   height: 80px;
+   border: none;
+   border-radius: 50px;
+   margin-bottom: 20px;
+}
+.banner-content .main-card .card-content img{
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+/* // */
+.form-control{
+    background-color: rgb(249, 235, 235);
+    height: 55px;
+}

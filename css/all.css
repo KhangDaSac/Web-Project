@@ -57,8 +57,6 @@ img{
     width: 100%;
 }
 
-
-
 .container{
     display: flex;
     flex-direction: column;
@@ -69,7 +67,6 @@ img{
 .container > *{
     width: 95vw;
 }
-
 
 /* dynamic navbar */
 #dynamic-navbar{
@@ -107,21 +104,6 @@ img{
 }
 
 /* wrapper */
-.wrapper{
-    background-image: url(../images/home-resort-hero-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    z-index: 0;
-    position: relative;
-    height: 120vh;
-    min-width: 800px;
-    margin: 40px;
-
-}
 
 .wrapper::before{
     width: 100%;

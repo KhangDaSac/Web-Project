@@ -107,21 +107,7 @@ img{
 }
 
 /* wrapper */
-.wrapper{
-    background-image: url(../images/home-resort-hero-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    z-index: 0;
-    position: relative;
-    height: 120vh;
-    min-width: 800px;
-    margin: 40px;
 
-}
 
 .wrapper::before{
     width: 100%;
@@ -129,7 +115,6 @@ img{
     content: "";
     height: 344px;
     opacity: 1;
-    background: linear-gradient(black, rgba(0, 0, 0, 0));
     border-radius: 20px;
     z-index: -5;
 } 
@@ -140,11 +125,10 @@ img{
     content: "";
     height: 344px;
     opacity: 1;
-    background: linear-gradient(rgba(0, 0, 0, 0), black);
     border-radius: 20px;
     z-index: -5;
     bottom: 0;
-}
+} 
 
 .header-top-item{
     display: flex;
@@ -219,4 +203,4 @@ img{
 
 .footer-img > img{
     width: 60%;
-}
+} 

@@ -50,6 +50,21 @@
     min-height: 100px;
 }
 
+.wrapper_service1{
+    background-image: url(../images/resort.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    z-index: 0;
+    position: relative;
+    height: 55vh;
+    min-width: 800px;
+    margin: 40px;
+
+}
 .form-group-price{
     min-width: 300px;
 }

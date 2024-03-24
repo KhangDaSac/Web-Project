@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/css-icon/css/sharp-solid.css"/>
     <link rel="stylesheet" href="../css/css-icon/css/sharp-regular.css"/>
     <link rel="stylesheet" href="../fonts/fonts.css">
-    <title>Spa Hotale</title>
+    <title>Service Detail</title>
 </head>
 <body>
     <div class="container">
@@ -25,7 +25,7 @@
                 <li class="menu-item menu-item-login"><a href="">ĐĂNG NHẬP</a></li>
             </ul>
         </div>
-        <div class="wrapper_service">
+        <div class="wrapper_service1">
             <header class="header">
                 <div class="header-main">
                     <div class="container-content">
@@ -53,18 +53,17 @@
                     </div>
                 </div>
             </header>
-    <p style="color: white; text-align: center; padding-top: 70px; padding-bottom: 90px; font-family: 'Times New Roman'; font-size: 70px;";>Spa Hotale</p>
+    <p style="color: white; text-align: center; padding-top: 70px; padding-bottom: 90px; font-family: 'Times New Roman'; font-size: 70px;"; id="ndc"></p>
     <section class="row row-service">
         <div class="service">
             <ul class="list-service">
                 <li class="item-service">
                     <div class="image-service">
-                        <img src="../images/service/spa.png" alt="">
+                        <img src="" alt="" id="anhdoi">
                     </div>
                     <div class="content-service">
-                        <h1>Spa Hotale</h1>
-                        <p>Lạc vào ốc đảo Spa Hotale Hotel sang trọng và quyến rũ để tận hưởng những giây phút thư giãn tuyệt đối giữa thiên nhiên. Tại đây, bạn có thể đắm mình trong những trải nghiệm spa độc đáo, được chắt lọc từ tinh hoa nghệ thuật phương Đông và phương Tây.<br>
-                            Giờ mở cửa: Từ 10:00 sáng đến 10:00 tối.</p>  
+                        <h1 id="nddoi1"></h1>
+                        <p id="nddoi2"></p>  
                     </div>                
                 </li>
                 <li class="item-service item-service-even">  
@@ -107,5 +106,11 @@
         </div>
     </footer>        
 <script src="../js/home.js"></script>
+<script>
+    document.getElementById("nddoi1").innerHTML=localStorage.getItem("hh1");
+    document.getElementById("nddoi2").innerHTML=localStorage.getItem("pp");
+    document.getElementById("ndc").innerHTML=localStorage.getItem("hh1");
+    document.getElementById("anhdoi").src=localStorage.getItem("doianh");
+</script>
 </body>
 </html>

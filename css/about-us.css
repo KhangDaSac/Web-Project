@@ -1,0 +1,179 @@
+.wrapper-about-us{
+    background-image: url(../images/resort-title-bg.jpg);
+}
+
+/* banner */
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+    justify-content: space-around;
+}
+
+.banner-title > *{
+    display: flex;
+    justify-content: center;
+}
+
+.banner-title > h1{
+    font-size: 50px;
+    font-family: 'Shelia VNF';
+    color: #fff;
+    font-size: 100px; 
+}
+
+.banner-title > span{
+    font-size: 30px;
+    margin-top: 50px;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+}
+
+.search-room{
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    flex-wrap: wrap;
+}
+
+.form-group{
+    flex: 1;
+    background-color: #fff;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    min-width: 200px;
+    max-width: 250px;
+    min-height: 100px;
+}
+
+.form-group-price{
+    min-width: 300px;
+}
+
+.form-group label{
+    font-size: 15px;
+    margin: 10px 0;
+    font-weight: 500;
+    font-family: "Jost", sans-serif;
+    color: #929292;
+}
+
+.value-space{
+    width: 100%;
+}
+
+#check-in,
+#check-out,
+.amount,
+.price{
+    width: 100%;
+    min-height: 30px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+
+.combobox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-button{
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0);
+
+}
+
+.button-submit{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: red;
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid #fff;
+}
+
+/* row about us */
+
+.aboutus-title span{
+    font-size: 25px;
+}
+
+.row-abouts .paragraph{
+    font-size: 30px;
+    margin: 50px 0;
+    line-height: 90px;
+}
+
+.row-abouts img{
+    width: 80%;
+    border-radius: 50px 0;
+}
+
+/* title row */
+.title-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title-row > h1{
+    font-family: 'Shelia VNF';
+    width: 60%;
+    text-align: center;
+    font-size: 70px;
+    margin: 50px;
+}
+
+.title-row > p {
+    width: 60%;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+.col img{
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.about-us-content p{
+    font-size: 20px;
+    line-height: 40px;
+    margin: 50px 0;
+    text-align: justify;
+}
+
+.about-us-content h1{
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+}
+
+.title-select-room{
+    background-color: #00000080;
+}
+
+.title-select-room h1{
+    color: white;
+    font-size: 80px;
+    font-family: 'Shelia VNF';
+    font-weight: 800;
+    margin: 80px;
+}
+
+.btn-book{
+    font-weight: 600;
+    background-color: white;
+    padding: 20px 50px;
+    margin: 50px 0;
+}

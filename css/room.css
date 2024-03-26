@@ -201,7 +201,7 @@
 /* baner */
 .banner {
   position: relative;
-  background: url("../../images/resort-title-bg.jpg");
+  background: url("../images/resort-title-bg.jpg");
   background-position: center;
   background-size: cover;
   overflow: hidden;

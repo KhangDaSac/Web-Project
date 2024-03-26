@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/css-icon/css/all.css"/>
     <link rel="stylesheet" href="../css/css-icon/css/sharp-solid.css"/>
     <link rel="stylesheet" href="../css/css-icon/css/sharp-regular.css"/>
     <link rel="stylesheet" href="../fonts/fonts.css">
-
 
 </head>
 
@@ -94,15 +94,15 @@
                             </div>
                         </div>
                     
-                        <div class="form-group form-group-price">
+                        <div class="form-group">
                             <div class="combobox combobox-price">
                                 <label for="">Giá</label>
                                 <select class="price" name="child">
                                     <option value="1" selected>Dưới <span class="format-VND">200.000</span> VND</option>
-                                    <option value="2">Từ <span class="format-VND">200.000</span> đến dưới <span class="format-VND">400.000</span> VND</option>
-                                    <option value="3">Từ <span class="format-VND">400.000</span> đến dưới <span class="format-VND">600.000</span> VND</option>
-                                    <option value="4">Từ <span class="format-VND">600.000</span> đến dưới <span class="format-VND">800.000</span> VND</option>
-                                    <option value="5">Từ <span class="format-VND">800.000</span> đến dưới <span class="format-VND">1.000.000</span> VND</option>
+                                    <option value="2"><span class="format-VND">200.000</span> - <span class="format-VND">400.000</span> VND</option>
+                                    <option value="3"><span class="format-VND">400.000</span> - <span class="format-VND">600.000</span> VND</option>
+                                    <option value="4"><span class="format-VND">600.000</span> - <span class="format-VND">800.000</span> VND</option>
+                                    <option value="5"><span class="format-VND">800.000</span> - <span class="format-VND">1.000.000</span> VND</option>
                                     <option value="6">Trên <span class="format-VND"> 1.000.000</span> VND</option>
                                 </select>
                             </div>
@@ -114,14 +114,18 @@
                 </div>
             </div>
         </div>
-        <section class="row row-aboutus">
-            <div class="row-left row-aboutus-left">
-                <div class="row-aboutus-left-title">
-                    <h3>
+        <section class="row row-abouts">
+            <div class="title-row">
+                <h1>Thông Tin Về Chúng Tôi</h1>
+                <p>Một sự thanh thản tuyệt vời đã chiếm hữu toàn bộ tâm hồn tôi, như những buổi sáng mùa xuân ngọt ngào mà tôi tận hưởng bằng cả trái tim mình. Tôi chỉ có một mình, và cảm nhận được sức hấp dẫn của sự tồn tại ở nơi này, nơi được tạo ra để mang lại niềm hạnh phúc cho tâm hồn.</p>
+            </div>
+            <div class="col m-5">
+                <div class="row aboutus-title">
+                    <h3 class="col">
                         <i class="fa-solid fa-star"></i>
                         <span>5 Sao</span>
                     </h3>
-                    <h3>
+                    <h3 class="col">
                         <i class="fa-solid fa-door-closed"></i>
                         <span>25 Phòng</span>
                     </h3>
@@ -134,7 +138,7 @@
                     <div class="line-see-more"></div>
                 </div>
             </div>
-            <div class="row-right row-aboutus-right">
+            <div class="col">
                 <img src="../images/resort-swim.jpg" alt="">
             </div>
         </section>
@@ -278,19 +282,22 @@
                 </div>
                 
             </div>
-            <div class="see-more see-more-all-room">
-                <a href=""><span>XEM TẤT CẢ CÁC PHÒNG</span><i class="fa-solid fa-chevron-right"></i></a>
-                <div class="line-see-more"></div>
+            <div class="d-flex justify-content-center">
+                <div class="see-more see-more-all-room">
+                    <a href=""><span>XEM TẤT CẢ CÁC PHÒNG</span><i class="fa-solid fa-chevron-right"></i></a>
+                    <div class="line-see-more"></div>
+                </div>
             </div>
+            
         </section>
         <section class="row row-extension">
             <div class="title-row">
                 <h1>Các Tiện Ích Của Khách Sạn</h1>
                 <p>Một sự thanh thản tuyệt vời đã chiếm hữu toàn bộ tâm hồn tôi, như những buổi sáng mùa xuân ngọt ngào mà tôi tận hưởng bằng cả trái tim mình.</p>
             </div>
-            <div class="extension">
+            <div class="w-100">
                 <ul class="list-extension">
-                    <li class="item-extension">
+                    <li class="item-extension"> 
                        <div class="item-ext">
                         <img src="../images/icon/pool.png" alt=""> 
                        <h3>Bãi đỗ xe</h3>
@@ -335,7 +342,7 @@
                 </ul>
             </div>
         </section>
-        <section class="row row-video">
+        <section class="row row-video d-flex justify-content-center">
             <video class="video-hotel" src="../videos/Luxury Resort & Hotel in Indonesia - Aman-(1080p).mp4" controls></video>
         </section>
         <section class="row row-service">
@@ -395,7 +402,7 @@
             <div class="list-news">
                 <div class="news-item">
                     <a href="" class="news-image">
-                        <img src="../images/news/news-1.png" alt="">
+                        <img src="../images/news/new-1.png" alt="">
                     </a>
                     <div class="news-content">
                         <div class="news-title">Các thành phố nên đến thăm lần đầu tiên ở châu Âu</div>
@@ -407,7 +414,7 @@
                 </div>
                 <div class="news-item">
                     <a href="" class="news-image">
-                        <img src="../images/news/news-2.png" alt="">
+                        <img src="../images/news/new-2.png" alt="">
                     </a>
                     <div class="news-content">
                         <div class="news-title">Các thành phố nên đến thăm lần đầu tiên ở châu Âu 2</div>
@@ -419,7 +426,7 @@
                 </div>
                 <div class="news-item">
                     <a href="" class="news-image">
-                        <img src="../images/news/news-3.png" alt="">
+                        <img src="../images/news/new-3.png" alt="">
                     </a>
                     <div class="news-content">
                         <div class="news-title">Mẹo chọn chỗ cho kì nghĩ</div>
@@ -430,10 +437,13 @@
                     </div>
                 </div>
             </div>
-            <div class="see-more see-more-all-news">
-                <a href=""><span>ĐỌC THÊM</span><i class="fa-solid fa-chevron-right"></i></a>
-                <div class="line-see-more"></div>
+            <div class="d-flex justify-content-center">
+                <div class="see-more see-more-all-news">
+                    <a href=""><span>ĐỌC THÊM</span><i class="fa-solid fa-chevron-right"></i></a>
+                    <div class="line-see-more"></div>
+                </div>
             </div>
+            
         </section>
     </div>
     <footer class="footer">

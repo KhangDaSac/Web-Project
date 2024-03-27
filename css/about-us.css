@@ -176,4 +176,11 @@
     background-color: white;
     padding: 20px 50px;
     margin: 50px 0;
+    border: 2px solid #fff;
+}
+
+.btn-book:hover{
+    background-color: #ffffff00;
+    color: #fff;
+    border: 2px solid #fff;
 }

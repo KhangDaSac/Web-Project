@@ -74,7 +74,7 @@ function Deluxe() {
     localStorage.setItem("sao2", sao2);
     localStorage.setItem("ngay2", ngay2);
 
-    window.location.href = "roomdetails.html"
+    window.location.href = "room-details.html"
 
 }
 function Senior() {

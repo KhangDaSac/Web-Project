@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+
+
 /* dynamic navbar */
 #dynamic-navbar {
   position: fixed;
@@ -512,7 +514,7 @@ img {
   justify-content: start;
 }
 
-.footer-item>* {
+.footer-item > * {
   margin: 20px;
 }
 

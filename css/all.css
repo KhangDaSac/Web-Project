@@ -184,6 +184,12 @@ img{
 .menu-item-login > a{
     border: 2px solid white;
     border-radius: 10px;
+    padding: 15px 20px;
+}
+
+.menu-item-login > a:hover{
+    background-color: #fff;
+    color: #000;
 }
 
 /* row footer */

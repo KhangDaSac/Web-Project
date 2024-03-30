@@ -1,5 +1,16 @@
 .wrapper-about-us{
     background-image: url(../images/resort-title-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    z-index: 0;
+    position: relative;
+    height: 100vh;
+    min-width: 800px;
+    margin: 30px;
 }
 
 /* banner */

@@ -223,11 +223,12 @@
 }
 
 .banner .banner-content .banner-title h1 {
-  font-size: 70px;
+  font-size: 80px;
   color: #fff;
   letter-spacing: 0;
   font-weight: 300;
   text-transform: capitalize;
+  font-family: 'Shelia VNF';
 }
 
 @media (max-width: 768px) {

@@ -53,17 +53,16 @@
 .wrapper_service1{
     background-image: url(../images/resort.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: start;
     z-index: 0;
     position: relative;
-    height: 55vh;
+    height: 60vh;
     min-width: 800px;
-    margin: 40px;
-
+    margin: 30px;
 }
 .form-group-price{
     min-width: 300px;
@@ -363,9 +362,9 @@
 }
 
 /* row news */
-.row-news{
+/* .row-news{
     
-}
+} */
 
 .list-news{
     display: flex;

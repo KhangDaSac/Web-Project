@@ -56,7 +56,6 @@
     text-decoration: none;
     margin: 10px;
     padding: 20px;
-    margin: 20px;
     font-weight: 700;
     z-index: 20;
     min-width: 80px;
@@ -110,15 +109,17 @@
 }
 
 form{
-    margin-top: 100px;
+    margin-top: 90px;
 }
 
 .forget{
     display: block;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 18px;
     text-decoration: none;
     color: rgb(248, 239, 229);
     margin-left: 200px;
+    font-family: "Montserrat Medium";
 }
 
 .forget:hover{
@@ -138,10 +139,16 @@ form{
     background: none;
     transition: height 0.25s;
     color: rgb(248, 239, 229);
+    font-size: 14px;
+    font-family: "Montserrat Medium";
 }
 
 .content1 input::placeholder{
-    color: rgb(248, 239, 229);font-style: italic;
+    color: rgb(248, 239, 229);
+    font-style: italic;
+    font-size: 14px;
+    font-family: "Montserrat Medium";
+    opacity: 75%;
 }
 
 .content1 input:focus{
@@ -151,17 +158,18 @@ form{
 }
 
 .btnsignin{
+    font-family: "Montserrat Medium";
     background: none;
     border: 2px solid rgb(248, 239, 229);
     border-radius: 5px;
     width: 140px;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
     color: rgb(248, 239, 229);
     height: 40px;
-    margin-top: 5px;
+    margin-top: 10px;
     transition: width 0.25s;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .btnsignin:hover{
@@ -190,7 +198,7 @@ form{
 }
 
 .content2{
-    margin-top: 130px;
+    margin-top: 120px;
     width: 50%;
     float: left;
     margin-left: 360px;
@@ -200,7 +208,8 @@ form{
 .content2 h3{
     font-family: "Montserrat ExtraBold";
     color: rgb(76, 48, 26);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 20px;
     text-shadow: blanchedalmond 1px 1px 5px;
 }
 
@@ -212,9 +221,9 @@ form{
 }
 
 .content2 p{
-    width: 50%;
+    width: 45%;
     color: rgb(66, 37, 14);
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
     font-family: "Montserrat Medium";
     margin-bottom: 17px;
@@ -223,14 +232,15 @@ form{
 
 .btnsignup{
     transition: width 0.25s;
-    width: 120px;
-    height: 40px;
-    font-size: 15px;
+    width: 130px;
+    height: 45px;
+    font-size: 16px;
     font-weight: bold;
     background: none;
     border: 3px solid rgb(66, 37, 14);
     border-radius: 5px;
     color: rgb(66, 37, 14);
+    font-family: "Montserrat Medium";
 }
 
 .btnsignup:hover{

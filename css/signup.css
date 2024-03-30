@@ -56,7 +56,6 @@
     text-decoration: none;
     margin: 10px;
     padding: 20px;
-    margin: 20px;
     font-weight: 700;
     z-index: 20;
     min-width: 80px;
@@ -120,16 +119,17 @@
 .back-to-signin h3{
     font-family: "Montserrat ExtraBold";
     color: rgb(248, 239, 229);
-    margin-bottom: 10px;
+    margin-bottom: 17px;
     text-shadow: rgb(76, 48, 26) 1px 1px 5px;
+    font-size: 20px;
 }
 
 .back-to-signin p{
     color: rgb(248, 239, 229);
-    width: 60%;
-    font-size: 15px;
+    width: 70%;
+    font-size: 16px;
     font-family: "Montserrat Medium";
-    margin-bottom: 17px;
+    margin-bottom: 22px;
     text-shadow: rgb(76, 48, 26) 1px 1px 5px;
 }
 
@@ -143,6 +143,8 @@
     border: 3px solid rgb(248, 239, 229);
     border-radius: 5px;
     color: rgb(248, 239, 229);
+    text-shadow: rgb(76, 48, 26) 1px 1px 5px;
+    font-family: "Montserrat Medium";
 }
 
 .btnsignin:hover{
@@ -172,6 +174,8 @@
     border-radius: 4px;
     padding: 5px;
     transition: height 0.25s;
+    font-family: "Montserrat Medium";
+    font-size: 14px;
 }
 
 input:focus{
@@ -185,6 +189,9 @@ input:focus{
     font-size: 14px;
     font-style: italic;
     text-indent: 5px;
+    font-family: "Montserrat Medium";
+    opacity: 75%;
+
 }
 
 form{
@@ -203,12 +210,14 @@ form{
     border: 2px solid rgb(248, 239, 229);
     border-radius: 5px;
     width: 140px;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
     color: rgb(248, 239, 229);
     height: 40px;
     margin-top: 15px;
     transition: width 0.25s;
+    font-family: "Montserrat Medium";
+    margin-bottom: 10px;
 }
 
 .btnrgt:hover{
@@ -218,9 +227,9 @@ form{
 }
 
 .social i{
-    margin-top: 10px;
+    margin-top: 20px;
     width: 3%;
-    margin: 10px;
+    margin: 15px;
     color: rgb(248, 239, 229);
     transition: width 0.25s;
 }

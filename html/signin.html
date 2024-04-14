@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/css-icon/css/sharp-solid.css" />
     <link rel="stylesheet" href="../css/css-icon/css/sharp-regular.css" />
     <link rel="stylesheet" href="../fonts/fonts.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -31,7 +32,7 @@
                                 <li class="menu-item"><a href="room.html">PHÒNG</a></li>
                                 <li class="menu-item"><a href="blog.html">DIỄN ĐÀN</a></li>
                                 <li class="menu-item"><a href="contact.html">LIÊN HỆ</a></li>
-                                <li class="menu-item menu-item-login"><a href="signin.html">ĐĂNG NHẬP</a></li>
+                                <li class="menu-item menu-item-login"><a href="signup.html">ĐĂNG KÝ</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -47,8 +48,14 @@
                 <img src="../images/SignUpSignIn/ks.jpeg" alt="" class="imgcnt">
                 <div class="content1">
                     <form action="">
-                        <input type="email" class="email" placeholder="Email">
-                        <input type="password" class="password" placeholder="Password">
+                        <input type="email" class="email" placeholder="Email" id="email">
+                        <div class="error">
+                            <span id="eremail"></span>
+                        </div>
+                        <input type="password" class="password" placeholder="Password" id="password">
+                        <div class="error">
+                            <span id="erpw"></span>
+                        </div>
                         <a href="#" class="forget">Forgot Password?</a>
                         <button class="btnsignin">Sign In</button>
                     </form>
@@ -91,6 +98,51 @@
         </div>
     </footer>
     <script src="../js/home.js"></script>
+    <script>
+        $(document).ready(function () {
+            let email = localStorage.getItem("email");
+            let password = localStorage.getItem("password");
+            let regemail = /^[A-Za-z]\w+@(gmail|yahoo|iuh|hotmail)(\.com){1}$/;
+            let regpw = /^(?=.*[0-9])(?=.*[A-Z])(?=.*[!@#$%^&]).{8,}$/;
+            
+            function check(reg,gtri){
+                if(reg.test(gtri)){
+                    return true;
+                }
+                else{
+                    return false;
+                }
+            }
+
+            $("#email").blur(function (e) { 
+                e.preventDefault();
+                let e = $("#email").val();
+                if(e == ""){
+                    $("#eremail").html("Email là bắt buộc để đăng nhập");
+                }
+                else if(!check(regemail,e)){
+                    $("#eremail").html("Email sai định dạng");
+                }
+                else{
+                    $("#eremail").html("");
+                }
+            });
+
+            $("#password").blur(function (e) { 
+                e.preventDefault();
+                let p = $("#password").val();
+                if(p==""){
+                    $("#erpw").html("Mật khẩu là bắt buộc để đăng nhập");
+                }
+                else if(!check(regpw,p)){
+                    $("#erpw").html("Mật khẩu phải từ 8 kí tự trở lên và có ít nhất 1 chữ cái in hoa và 1 kí tự đặc biệt");
+                }
+                else{
+                    $("#erpw").html("");
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

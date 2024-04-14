@@ -30,7 +30,7 @@
   max-height: 100px;
 }
 
-.menu_item>a {
+.menu-item>a {
   color: #fff;
   display: block;
   font-size: 15px;
@@ -41,14 +41,20 @@
   min-width: 80px;
 }
 
-.menu_item-logo>a {
+.menu-item-logo>a {
   min-width: 200px;
   max-width: 250px;
 }
 
-.menu_item-login>a {
+.menu-item-login>a {
   border: 2px solid white;
   border-radius: 10px;
+  padding: 15px 20px;
+}
+
+.menu-item-login>a:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 @keyframes showNavbar {
@@ -515,7 +521,7 @@ img {
   justify-content: start;
 }
 
-.footer-item > * {
+.footer-item>* {
   margin: 20px;
 }
 

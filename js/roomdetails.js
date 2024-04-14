@@ -121,7 +121,7 @@ function Senior() {
     localStorage.setItem("bl2", bl2);
     localStorage.setItem("sao2", sao2);
     localStorage.setItem("ngay2", ngay2);
-    window.location.href = "roomdetails.html"
+    window.location.href = "room-details.html"
 }
 function SuiteTriple() {
     let a = 'Phòng Suite Triple có Ban công'
@@ -167,7 +167,7 @@ function SuiteTriple() {
     localStorage.setItem("bl2", bl2);
     localStorage.setItem("sao2", sao2);
     localStorage.setItem("ngay2", ngay2);
-    window.location.href = "roomdetails.html"
+    window.location.href = "room-details.html"
 }
 function FamilySuite() {
     let a = ' Phòng Family Suite có ban công'
@@ -212,7 +212,7 @@ function FamilySuite() {
     localStorage.setItem("bl2", bl2);
     localStorage.setItem("sao2", sao2);
     localStorage.setItem("ngay2", ngay2);
-    window.location.href = "roomdetails.html"
+    window.location.href = "room-details.html"
 }
 function Connecting() {
     let a = 'Phòng Connecting'
@@ -257,7 +257,7 @@ function Connecting() {
     localStorage.setItem("bl2", bl2);
     localStorage.setItem("sao2", sao2);
     localStorage.setItem("ngay2", ngay2);
-    window.location.href = "roomdetails.html"
+    window.location.href = "room-details.html"
 }
 
 

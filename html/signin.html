@@ -57,7 +57,7 @@
                             <span id="erpw"></span>
                         </div>
                         <a href="#" class="forget">Forgot Password?</a>
-                        <button class="btnsignin">Sign In</button>
+                        <button class="btnsignin" id="btnsignin">Sign In</button>
                     </form>
                     <p>Đăng nhập bằng mạng xã hội của bạn</p>
                     <div class="social">
@@ -97,14 +97,12 @@
             </div>
         </div>
     </footer>
-    <script src="../js/home.js"></script>
     <script>
         $(document).ready(function () {
             let email = localStorage.getItem("email");
             let password = localStorage.getItem("password");
             let regemail = /^[A-Za-z]\w+@(gmail|yahoo|iuh|hotmail)(\.com){1}$/;
             let regpw = /^(?=.*[0-9])(?=.*[A-Z])(?=.*[!@#$%^&]).{8,}$/;
-            
             function check(reg,gtri){
                 if(reg.test(gtri)){
                     return true;
@@ -113,36 +111,71 @@
                     return false;
                 }
             }
-
+            function valid(){
+                let i=0;
+                let mk= $("#password").val();
+                let mail = $("#email").val();
+                if(mail == ""){
+                    $("#eremail").html("Email là bắt buộc để đăng nhập");
+                    i=1;
+                }
+                else if(!check(regemail, mail)){
+                    $("#eremail").html("Email sai định dạng");
+                    i=1;
+                }
+                if(mk == ""){
+                    $("#erpw").html("Mật khẩu là bắt buộc để đăng nhập");
+                    i=1;
+                }
+                else if(!check(regpw, mk)){
+                    $("#erpw").html("Mật khẩu phải từ 8 kí tự trở lên và có ít nhất 1 chữ cái in hoa và 1 kí tự đặc biệt");
+                    i=1;
+                }
+                if(i=1){
+                    return false;
+                }else{
+                    return true;
+                }
+            }
             $("#email").blur(function (e) { 
                 e.preventDefault();
-                let e = $("#email").val();
-                if(e == ""){
+                let mail = $("#email").val();
+                if(mail == ""){
                     $("#eremail").html("Email là bắt buộc để đăng nhập");
                 }
-                else if(!check(regemail,e)){
+                else if(!check(regemail, mail)){
                     $("#eremail").html("Email sai định dạng");
                 }
                 else{
                     $("#eremail").html("");
                 }
             });
-
             $("#password").blur(function (e) { 
                 e.preventDefault();
-                let p = $("#password").val();
-                if(p==""){
+                let mk= $("#password").val();
+                if(mk == ""){
                     $("#erpw").html("Mật khẩu là bắt buộc để đăng nhập");
                 }
-                else if(!check(regpw,p)){
+                else if(!check(regpw, mk)){
                     $("#erpw").html("Mật khẩu phải từ 8 kí tự trở lên và có ít nhất 1 chữ cái in hoa và 1 kí tự đặc biệt");
                 }
                 else{
                     $("#erpw").html("");
                 }
             });
+
+            $("#btnsignin").click(function (e) { 
+                e.preventDefault();
+                let mail = $("#email").val();
+                let mk= $("#password").val();
+                if(valid()){
+                    if(mail != email){
+                        $("#erpw").html("Tài khoản hoặc mật khẩu không chính xác");
+                    }
+                }
+            });
+
         });
     </script>
 </body>
-
 </html>

@@ -131,9 +131,10 @@
                     $("#erpw").html("Mật khẩu phải từ 8 kí tự trở lên và có ít nhất 1 chữ cái in hoa và 1 kí tự đặc biệt");
                     i=1;
                 }
-                if(i=1){
+                if(i==1){
                     return false;
                 }else{
+                    i=0;
                     return true;
                 }
             }
@@ -171,6 +172,13 @@
                 if(valid()){
                     if(mail != email){
                         $("#erpw").html("Tài khoản hoặc mật khẩu không chính xác");
+                    }
+                    else if(mk != password){
+                        $("#erpw").html("Tài khoản hoặc mật khẩu không chính xác");
+                    }
+                    else{
+                        alert("Đăng nhập thành công quay về trang chủ");
+                        let w = window.open("home.html");
                     }
                 }
             });

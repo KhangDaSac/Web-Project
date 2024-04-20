@@ -58,6 +58,16 @@
         <div class="service">
             <ul class="list-service">
                 <li class="item-service">
+                    <div class="content-service">
+                        <h1 id="nds1"></h1>
+                        <p id="nds2">
+                        </p>
+                    </div>
+                    <div class="image-service">
+                        <img src="" alt="" id="nds3">
+                    </div>
+                </li>
+                <li class="item-service">
                     <div class="image-service">
                         <img src="" alt="" id="anhdoi">
                     </div>
@@ -65,12 +75,6 @@
                         <h1 id="nddoi1"></h1>
                         <p id="nddoi2"></p>  
                     </div>                
-                </li>
-                <li class="item-service item-service-even">  
-                    <div class="content-service">
-                        
-                       
-                    </div>
                 </li>
             </ul>
         </div>
@@ -109,8 +113,11 @@
 <script>
     document.getElementById("nddoi1").innerHTML=localStorage.getItem("hh1");
     document.getElementById("nddoi2").innerHTML=localStorage.getItem("pp");
-    document.getElementById("ndc").innerHTML=localStorage.getItem("hh1");
+    document.getElementById("ndc").innerHTML=localStorage.getItem("hh2");
     document.getElementById("anhdoi").src=localStorage.getItem("doianh");
+    document.getElementById("nds1").innerHTML=localStorage.getItem("hh2");
+    document.getElementById("nds2").innerHTML=localStorage.getItem("pp2");
+    document.getElementById("nds3").src=localStorage.getItem("doianh2");
 </script>
 </body>
 </html>

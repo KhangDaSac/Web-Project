@@ -64,7 +64,7 @@
                 <li class="item-service">
                     <div class="content-service">
                         <h1>Nhà hàng</h1>
-                        <p>Hệ thống sảnh tiệc lớn, linh hoạt, được đầu tư trang thiết bị hiện đại sẽ luôn là gợi ý tuyệt vời cho những tiệc cưới, hội nghị đẳng cấp.</p>
+                        <p>Hệ thống sảnh tiệc lớn, linh hoạt, được đầu tư trang thiết bị hiện đại sẽ luôn là gợi ý tuyệt vời cho những tiệc cưới, hội nghị đẳng cấp...</p>
                         <div class="see-more">
                             <a href="#" onclick="Res()"><span>ĐỌC THÊM</span><i class="fa-solid fa-chevron-right"></i></a>
                             <div class="line-see-more"></div>
@@ -80,7 +80,7 @@
                     </div>
                     <div class="content-service">
                         <h1>Spa Hotale</h1>
-                        <p>Lạc vào ốc đảo Spa Hotale Hotel sang trọng và quyến rũ để tận hưởng những phút giây thư giãn tuyệt đối giữa thiên nhiên. Tại đây, bạn có thể đắm mình trong những trải nghiệm spa độc đáo</p>
+                        <p>Lạc vào ốc đảo Spa Hotale Hotel sang trọng và quyến rũ để tận hưởng những phút giây thư giãn tuyệt đối giữa thiên nhiên. Tại đây, bạn có thể đắm mình trong những trải nghiệm spa độc đáo...</p>
                         <div class="see-more">
                             <a href="#" onclick="SpaHotale()"><span>ĐỌC THÊM</span><i class="fa-solid fa-chevron-right"></i></a>
                             <div class="line-see-more"></div>
@@ -90,7 +90,7 @@
                 <li class="item-service">
                     <div class="content-service">
                         <h1>Sky Bar</h1>
-                        <p>Kỷ niệm khoảnh khắc của bạn với một trong những điểm nổi bật của chúng tôi về cocktail hoặc nếu bạn thích, tuyển chọn các loại trà quốc tế và cà phê có nguồn gốc địa phương có sẵn nóng hoặc đá giải khát.</p>
+                        <p>Kỷ niệm khoảnh khắc của bạn với một trong những điểm nổi bật của chúng tôi về cocktail hoặc nếu bạn thích, tuyển chọn các loại trà quốc tế và cà phê có nguồn gốc địa phương có sẵn nóng hoặc đá giải khát...</p>
                         <div class="see-more">
                             <a href="#" onclick="SkyBar()"><span>ĐỌC THÊM</span><i class="fa-solid fa-chevron-right"></i></a>
                             <div class="line-see-more"></div>
@@ -135,31 +135,48 @@
     </footer>        
 <script src="../js/home.js"></script>
 <script>
-
     function SpaHotale()
     {
-        let c='../images/service/spa.png'
-        let a='Spa Hotale'
-        let b='Lạc vào ốc đảo Spa Hotale Hotel sang trọng và quyến rũ để tận hưởng những giây phút thư giãn tuyệt đối giữa thiên nhiên. Tại đây, bạn có thể đắm mình trong những trải nghiệm spa độc đáo, được chắt lọc từ tinh hoa nghệ thuật phương Đông và phương Tây.<br> Giờ mở cửa: Từ 10:00 sáng đến 10:00 tối.'
+        let c1='../images/service/spa.png'
+        let a1='Spa Hotale'
+        let b1='Lạc vào ốc đảo Spa Hotale Hotel sang trọng và quyến rũ để tận hưởng những giây phút thư giãn tuyệt đối giữa thiên nhiên. Tại đây, bạn có thể đắm mình trong những trải nghiệm spa độc đáo, được chắt lọc từ tinh hoa nghệ thuật phương Đông và phương Tây.<br> Giờ mở cửa: Từ 10:00 sáng đến 10:00 tối.'
+        localStorage.setItem("hh2",a1);
+        localStorage.setItem("pp2",b1);
+        localStorage.setItem("doianh2",c1);
+        window.location.href = "service-detail.html";
+        let a ='Phòng xông hơi' ;
+        let b ='Phòng xông hơi với phong cách Nhật Bản mang đến một trải nghiệm thư giãn và gần gũi với thiên nhiên theo 3 đặc điểm sau: <br> - Tối giản và tự nhiên,<br> - Thư giãn và yên bình,<br> - Kết hợp với phong cách Zen';
+        let c ='../images/service/nha_tam_phong_xong_hoi.jpg';
         localStorage.setItem("hh1",a);
         localStorage.setItem("pp",b);
         localStorage.setItem("doianh",c);
-        window.location.href = "service-detail.html";
     }
     function Res()
     {
-        let c='../images/service/chef-cook.png'
-        let a='Nhà hàng'
-        let b='Hệ thống sảnh tiệc lớn, linh hoạt, được đầu tư trang thiết bị hiện đại sẽ luôn là gợi ý tuyệt vời cho những tiệc cưới, hội nghị đẳng cấp. Những đầu bếp tài ba được rèn luyện với nhiều món ăn trên thế giới sẽ làm điên đảo vị giác của bạn.'
+        let a1 ='Nhà hàng' ;
+        let b1 ='Hệ thống sảnh tiệc lớn, linh hoạt, được đầu tư trang thiết bị hiện đại sẽ luôn là gợi ý tuyệt vời cho những tiệc cưới, hội nghị đẳng cấp. Hệ thống sảnh tiệc lớn, linh hoạt, được đầu tư trang thiết bị hiện đại sẽ luôn là gợi ý tuyệt vời cho những tiệc cưới, hội nghị đẳng cấp.';
+        let c1 ='../images/service/nhahangst.jpg';
+        localStorage.setItem("hh2",a1);
+        localStorage.setItem("pp2",b1);
+        localStorage.setItem("doianh2",c1);
+        let c='../images/service/chef-cook.png';
+        let a='Món ăn';
+        let b='Menu món ăn, đồ uống đa dạng với đủ thể loại từ Á đến Âu cùng với các đầu bếp tài ba được rèn luyện với nhiều món ăn trên thế giới sẽ làm điên đảo vị giác của bạn.';
         localStorage.setItem("hh1",a);
         localStorage.setItem("pp",b);
         localStorage.setItem("doianh",c);
         window.location.href = "service-detail.html";
     }
     function SkyBar(){
-        let c='../images/service/bar.png'
-        let a='Sky bar'
-        let b='Hãy kỷ niệm khoảnh khắc của bạn bằng một trong những món cocktail nổi bật của chúng tôi hoặc nếu bạn thích, tuyển chọn các loại trà quốc tế và cà phê có nguồn gốc địa phương có sẵn nóng hoặc đá mát lạnh.<br> Giờ mở cửa: Hàng ngày từ 6 giờ chiều đến nửa đêm'
+        let c1='../images/service/bar.png'
+        let a1='Sky bar'
+        let b1='Hãy kỷ niệm khoảnh khắc của bạn bằng một trong những món cocktail nổi bật của chúng tôi hoặc nếu bạn thích, tuyển chọn các loại trà quốc tế và cà phê có nguồn gốc địa phương có sẵn nóng hoặc đá mát lạnh.<br> Giờ mở cửa: Hàng ngày từ 6 giờ chiều đến nửa đêm.'
+        localStorage.setItem("hh2",a1);
+        localStorage.setItem("pp2",b1);
+        localStorage.setItem("doianh2",c1);
+        let a ='Snack bar';
+        let b ='Ngoài ra, còn có Snack bar. Đây là nơi phù hợp cho việc thư giãn sau giờ làm việc căng thẳng, gặp gỡ bạn bè và tận hưởng những khoảnh khắc vui vẻ!';
+        let c ='../images/service/phong_bar.jpg';
         localStorage.setItem("hh1",a);
         localStorage.setItem("pp",b);
         localStorage.setItem("doianh",c);

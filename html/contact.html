@@ -13,6 +13,80 @@
     <link rel="stylesheet" href="../css/css-icon/css/sharp-solid.css"/>
     <link rel="stylesheet" href="../css/css-icon/css/sharp-regular.css"/>
     <link rel="stylesheet" href="../fonts/fonts.css">
+    <script>
+        $(document).ready(function () {
+            let varG, varN, varE, varC, varM;
+            $("#btn").attr("disabled", true);
+            $("#gender").blur(function (e) { 
+                e.preventDefault();
+                let reg = /^(Mr|Mrs)$/;
+                let temp = $("#gender").val();
+                if(!reg.test(temp)){
+                    $(".gender").html("Thông tin không hợp lệ!");
+                    varG = false;
+                }else{
+                    $(".gender").html("");
+                    varG = true;
+                }
+            });
+            $("#name").blur(function (e) { 
+                e.preventDefault();
+                let reg = /^([A-ZÀ-Ỹ][a-zà-ỹ]*\s)+([A-ZÀ-Ỹ][a-zà-ỹ]*)$/;
+                let temp = $("#name").val();
+                if(!reg.test(temp)){
+                    $(".name").html("Thông tin không hợp lệ!");
+                    varN = false;
+                }else{
+                    $(".name").html("");
+                    varN = true;
+                }
+            });
+            $("#email").blur(function (e) { 
+                e.preventDefault();
+                let reg = /^\w+\@[a-z]{4,7}(.com)$/;
+                let temp = $("#email").val();
+                if(!reg.test(temp)){
+                    $(".email").html("Thông tin không hợp lệ!");
+                    varE = false;
+                }else{
+                    $(".email").html("");
+                    varE = true;
+                }
+            });
+            $("#country").blur(function (e) { 
+                e.preventDefault();
+                let reg = /./;
+                let temp = $("#country").val();
+                if(!reg.test(temp)){
+                    $(".country").html("Thông tin không hợp lệ!");
+                    varC = false;
+                }else{
+                    $(".country").html("");
+                    varC = true;
+                }
+            });
+            $("#message").blur(function (e) { 
+                e.preventDefault();
+                let reg = /./;
+                let temp = $("#message").val();
+                if(!reg.test(temp)){
+                    $(".message").html("Thông tin không hợp lệ!");
+                    varM = false;
+                }else{
+                    $(".message").html("");
+                    varM = true;
+                }
+            });
+            $("input, textarea").blur(function (e) { 
+                e.preventDefault();
+                if(varG==true , varN==true , varE==true, varC==true, varM==true){
+                    $("#btn").attr("disabled", false);
+                }else{
+                    $("#btn").attr("disabled", true);
+                }
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -95,22 +169,27 @@
         <div class="row">
             <form class="row g-3">
                 <div class="col-md-6">
-                  <input type="text" class="form-control" id="" placeholder="Mr/Mrs*">
+                  <input type="text" class="form-control" id="gender" placeholder="Mr/Mrs*">
+                  <small class="gender"></small>
                 </div>
                 <div class="col-md-6">
-                  <input type="text" class="form-control" id="" placeholder="Full Name*">
+                  <input type="text" class="form-control" id="name" placeholder="Full Name*">
+                  <small class="name"></small>
                 </div>
                 <div class="col-12">
-                  <input type="email" class="form-control" id="" placeholder="Email*">
+                  <input type="email" class="form-control" id="email" placeholder="Email*">
+                  <small class="email"></small>
                 </div>
                 <div class="col-12">
-                  <input type="text" class="form-control" id="" placeholder="Country">
+                  <input type="text" class="form-control" id="country" placeholder="Country*">
+                  <small class="country"></small>
                 </div>
                 <div class="col-12">
-                    <textarea class="form-control" id="" rows="3" placeholder="Message" style="height: 150px;"></textarea>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Message*" style="height: 150px;"></textarea>
+                    <small class="message"></small>
                 </div>
                 <div class="col-12">
-                  <button type="submit" class="btn btn-dark" style="padding: 10px 30px;">GỬI</button>
+                  <button type="submit" class="btn btn-dark" style="padding: 10px 30px;" id="btn">GỬI</button>
                 </div>
               </form>
         </div>

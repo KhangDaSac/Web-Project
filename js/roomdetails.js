@@ -29,7 +29,109 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 });
+$(document).ready(function () {
+    $("#txtTen").blur(function () {
+        var ten = $(this).val();
+        if (ten == "") {
+            $("#errTen").html("Vui lòng nhập tên.");
+        } else {
+            $("#errTen").html("");
+        }
+    });
 
+    $("#txtEmail").blur(function () {
+        var email = $(this).val();
+        var regEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        if (email == "") {
+            $("#errEmail").html("Vui lòng nhập email.");
+        } else if (!regEmail.test(email)) {
+            $("#errEmail").html("Email không hợp lệ.");
+        } else {
+            $("#errEmail").html("");
+        }
+    });
+
+    $("#txtRequest").blur(function () {
+        var request = $(this).val();
+        if (request == "") {
+            $("#errRequest").html("Vui lòng nhập yêu cầu.");
+        } else {
+            $("#errRequest").html("");
+        }
+    });
+
+    $("#Checkbox").change(function () {
+        if (!$(this).is(":checked")) {
+            $("#errCheckbox").html("Vui lòng chọn.");
+        } else {
+            $("#errCheckbox").html("");
+        }
+    });
+    $("#submid").click(function (e) {
+        e.preventDefault();
+        if (validateAndFocusInputs()) {
+            alert("Thư yêu cầu đã được gửi");
+        }
+    });
+
+
+    function validateAndFocusInputs() {
+        var ten = $("#txtTen").val();
+        var email = $("#txtEmail").val();
+        var request = $("#txtRequest").val();
+        var regEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        var check = $("#Checkbox").is(":checked");
+
+        if (ten == "") {
+            $("#errTen").html("Vui lòng nhập tên.");
+            $("#txtTen").focus();
+            return false;
+        }
+        if (email == "") {
+            $("#errEmail").html("Vui lòng nhập email.");
+            $("#txtEmail").focus();
+            return false;
+        }
+        if (!regEmail.test(email)) {
+            $("#errEmail").html("Email không hợp lệ.");
+            $("#txtEmail").focus();
+            return false;
+        }
+        if (request == "") {
+            $("#errRequest").html("Vui lòng nhập yêu cầu.");
+            $("#txtRequest").focus();
+            return false;
+        }
+        if (!check) {
+            $("#errCheckbox").html("Vui lòng chọn.");
+            $("#Checkbox").focus();
+            return false;
+        }
+        return true;
+    }
+
+});
+function Search_room() {
+    let check_in = $("#CheckIn");
+    let check_out = $("#CheckOut");
+    let numPerson = $("#numPerson");
+    let price = $("#price");
+    console.log(price)
+    if (!check_in.val() || !check_out.val()) {
+        alert("vui lòng nhập thông tin ngày ngày đến và ngày đi");
+        return;
+    }
+
+    if (check_in.val() > check_out.val()) {
+        alert("Ngày đến phải trước ngày đi");
+        return;
+    }
+
+    localStorage.setItem("price", price.val());
+    localStorage.setItem("numPerson", numPerson.val());
+    window.location.href = "room.html";
+
+}
 function Deluxe() {
     let a = 'Phòng Deluxe hướng thành phố'
     let b = '300.000VND'

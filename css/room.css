@@ -321,15 +321,14 @@
 
 .rooms .rooms-grid .rooms-item .inner .content .room-title {
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 
 .rooms .rooms-grid .rooms-item .inner .content .room-title a {
   display: inline;
-  font-family: Jost;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 36px;
   text-align: left;
   color: #000000;
@@ -485,6 +484,8 @@ img {
   letter-spacing: 0px;
   text-transform: none;
   color: #000000;
+  font-family: 'Shelia VNF';
+  padding-bottom: 20px;
 }
 
 @media (max-width: 768px) {
@@ -495,13 +496,11 @@ img {
   .section-title .subtitle {
     font-size: 55px;
     line-height: 1.2;
+
   }
 }
 
-#demo.carousel {
-  width: 50%;
-  margin: auto;
-}
+
 
 /* row footer */
 .footer {
@@ -536,4 +535,9 @@ img {
 
 .footer-img>img {
   width: 60%;
+}
+
+#demo.carousel {
+  width: 50%;
+  margin: auto;
 }

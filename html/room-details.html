@@ -365,24 +365,24 @@
                                                     <form action="/booking" class="search-room">
                                                         <input name="Id" value="2020" hidden />
                                                         <div class="form-group checkin-form">
-                                                            <label for="">Check In</label>
+                                                            <label for="">Ngày Đến</label>
                                                             <div class="value-space">
-                                                                <input type="text" name="checkInDate" id="CheckIn"
-                                                                    class="form-control" value="03/17/2024">
+                                                                <input type="date" name="checkInDate" id="CheckIn"
+                                                                    class="form-control">
                                                             </div>
                                                         </div>
                                                         <div class="form-group checkout-form">
-                                                            <label for="">Check Out</label>
+                                                            <label for="">Ngày đi</label>
                                                             <div class="value-space">
-                                                                <input type="text" name="checkOutDate" id="CheckOut"
-                                                                    class="form-control" value="03/18/2024">
+                                                                <input type="date" name="checkOutDate" id="CheckOut"
+                                                                    class="form-control">
                                                             </div>
                                                         </div>
                                                         <div class="form-group guests-form">
                                                             <div class="div">
                                                                 <div>
-                                                                    <label for="">Adults</label>
-                                                                    <select class="amount2" name="Adult">
+                                                                    <label for="">Số người</label>
+                                                                    <select class="amount2" name="Adult" id="numPerson">
                                                                         <option value="1" selected>1</option>
                                                                         <option value="2">2</option>
                                                                         <option value="3">3</option>
@@ -395,26 +395,50 @@
                                                                         <option value="10">10</option>
 
                                                                     </select>
-                                                                    <label for="">Child</label>
-                                                                    <select class="amount3" name="Child">
-                                                                        <option value="0" selected>0</option>
-                                                                        <option value="1">1</option>
-                                                                        <option value="2">2</option>
-                                                                        <option value="3">3</option>
-                                                                        <option value="4">4</option>
-                                                                        <option value="5">5</option>
-                                                                        <option value="6">6</option>
-                                                                        <option value="7">7</option>
-                                                                        <option value="8">8</option>
-                                                                        <option value="9">9</option>
+                                                                    <label for="">Giá</label>
+                                                                    <select class="price" name="child" id="price">
+                                                                        <option value="200000" selected>
+                                                                            Dưới <span class="format-VND">200.000</span>
+                                                                            VND
+                                                                        </option>
+                                                                        <option value="400000">
+                                                                            <span class="format-VND">200.000</span> -
+                                                                            <span class="format-VND">400.000</span> VND
+                                                                        </option>
+                                                                        <option value="600000">
+                                                                            <span class="format-VND">400.000</span> -
+                                                                            <span class="format-VND">600.000</span> VND
+                                                                        </option>
+                                                                        <option value="800000">
+                                                                            <span class="format-VND">600.000</span> -
+                                                                            <span class="format-VND">800.000</span> VND
+                                                                        </option>
+                                                                        <option value="1000000">
+                                                                            <span class="format-VND">800.000</span> -
+                                                                            <span class="format-VND">1.000.000</span>
+                                                                            VND
+                                                                        </option>
+                                                                        <option value="10000000">
+                                                                            Trên <span class="format-VND">
+                                                                                1.000.000</span> VND
+                                                                        </option>
                                                                     </select>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="form-group btn-form">
-                                                            <button type="submit" class="btn-search1">
+                                                            <button type="button" class="btn-search1" id="search-room"
+                                                                onclick="Search_room()">
                                                                 Tìm Phòng
+
                                                         </div>
+                                                        <div class="form-group btn-form">
+                                                            <button type="button" class="btn-search1">
+                                                                <a href="booking.html">Đặt Phòng</a>
+
+
+                                                        </div>
+
                                                     </form>
                                                 </div>
                                             </div>
@@ -422,30 +446,35 @@
                                                 <form action="/Enquiry/Create" id="form-submid__enquiry"
                                                     class="form-submid__enquiry">
                                                     <div class="form-group">
-                                                        <label for="">Full Name*</label>
-                                                        <input type="text" name="Name" class="form-control">
+                                                        <label for="">Họ Tên*</label>
+                                                        <input type="text" name="Name" class="form-control" id="txtTen">
+                                                        <span id="errTen"></span>
                                                     </div>
                                                     <div class="form-group">
                                                         <label for="">Email*</label>
-                                                        <input type="text" name="Email" class="form-control">
+                                                        <input type="text" name="Email" class="form-control"
+                                                            id="txtEmail">
+                                                        <span id="errEmail"></span>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label for="">your enquiry*</label>
-                                                        <textarea name="Enquiry" id="" cols="30" rows="10"
+                                                        <label for="">Yêu Cầu Của Bạn*</label>
+                                                        <textarea name="Enquiry" id="txtRequest" cols="30" rows="10"
                                                             class="form-control"></textarea>
+                                                        <span id="errRequest"></span>
                                                     </div>
                                                     <div class="check-agree">
-                                                        <input type="checkbox" name="ckbox" id="" class="check-box"
-                                                            required>
+                                                        <input type="checkbox" name="ckbox" id="Checkbox"
+                                                            class="check-box" required>
                                                         <label for="">
                                                             * Tôi đồng ý với điều khoản dịch vụ và tuyên bố về quyền
                                                             riêng
                                                             tư
                                                         </label>
+                                                        <span id="errCheckbox"></span>
                                                     </div>
                                                     <div class="form-btn">
                                                         <input type="submit" class="submid-enquiry"
-                                                            value="Xác Nhận Yêu Cầu">
+                                                            value="Xác Nhận Yêu Cầu" id="submid">
 
                                                     </div>
                                                 </form>

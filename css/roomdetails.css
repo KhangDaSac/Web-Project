@@ -297,7 +297,7 @@
 }
 
 .room-details .sidebar .booking-bar .booking-tab__content .booking-content1 .form-search__room .search-room .form-group .value-space::after {
-    content: "\f0dd";
+
     font-family: "FontAwesome";
     position: absolute;
     right: 10px;
@@ -404,6 +404,11 @@
     background-color: transparent;
     border-color: #0c0c0c;
     border-radius: 6px;
+}
+
+.room-details .sidebar .booking-bar .booking-tab__content .booking-content1 .form-search__room .search-room .btn-form .btn-search1 a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .room-details .sidebar .booking-bar .booking-tab__content .booking-content2 .form-submid__enquiry .form-group {

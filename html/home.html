@@ -1,502 +1,592 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trang chủ</title>
-    <link rel="stylesheet" href="../bootstrap-5.3.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/all.css">
-    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/all.css" />
+    <link rel="stylesheet" href="../css/home.css" />
     <link rel="stylesheet" href="../css/css-icon/css/all.css" />
     <link rel="stylesheet" href="../css/css-icon/css/sharp-solid.css" />
     <link rel="stylesheet" href="../css/css-icon/css/sharp-regular.css" />
-    <link rel="stylesheet" href="../fonts/fonts.css">
+    <link rel="stylesheet" href="../fonts/fonts.css" />
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/roomdetails.js"></script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="container">
-        <div id="dynamic-navbar">
-            <ul class="menu-list">
-                <li class="menu-item menu-item-logo"><a href="home.html"><img src="../images/logo.png" alt=""></a></li>
-                <li class="menu-item"><a href="home.html">TRANG CHỦ</a></li>
-                <li class="menu-item"><a href="about-us.html">GIỚI THIỆU</a></li>
-                <li class="menu-item"><a href="service.html">DỊCH VỤ</a></li>
-                <li class="menu-item"><a href="room.html">PHÒNG</a></li>
-                <li class="menu-item"><a href="blog.html">DIỄN ĐÀN</a></li>
-                <li class="menu-item"><a href="contact.html">LIÊN HỆ</a></li>
-                <li class="menu-item menu-item-login"><a href="signin.html">ĐĂNG NHẬP</a></li>
-            </ul>
-        </div>
-        <div class="wrapper">
-            <header class="header">
-                <div class="header-main">
-                    <div class="container-content">
-                        <div class="header-top">
-                            <div class="header-top-item">
-                                <a href=""><i class="fa-solid fa-phone"></i> +(024) 2242 0777</a>
-                                <a href=""><i class="fa-solid fa-envelope"></i> info@webhotel.vn</a>
-                            </div>
-                        </div>
-                        <div class="header-content">
-                            <a href="" class="logo"></a>
-                            <nav class="menu">
-                                <ul class="menu-list">
-                                    <li class="menu-item menu-item-logo"><a href="home.html"><img
-                                                src="../images/logo.png" alt=""></a></li>
-                                    <li class="menu-item"><a href="home.html">TRANG CHỦ</a></li>
-                                    <li class="menu-item"><a href="about-us.html">GIỚI THIỆU</a></li>
-                                    <li class="menu-item"><a href="service.html">DỊCH VỤ</a></li>
-                                    <li class="menu-item"><a href="room.html">PHÒNG</a></li>
-                                    <li class="menu-item"><a href="blog.html">DIỄN ĐÀN</a></li>
-                                    <li class="menu-item"><a href="contact.html">LIÊN HỆ</a></li>
-                                    <li class="menu-item menu-item-login"><a href="signin.html">ĐĂNG NHẬP</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
+      <div id="dynamic-navbar">
+        <ul class="menu-list">
+          <li class="menu-item menu-item-logo">
+            <a href="home.html"><img src="../images/logo.png" alt="" /></a>
+          </li>
+          <li class="menu-item"><a href="home.html">TRANG CHỦ</a></li>
+          <li class="menu-item"><a href="about-us.html">GIỚI THIỆU</a></li>
+          <li class="menu-item"><a href="service.html">DỊCH VỤ</a></li>
+          <li class="menu-item"><a href="room.html">PHÒNG</a></li>
+          <li class="menu-item"><a href="blog.html">DIỄN ĐÀN</a></li>
+          <li class="menu-item"><a href="contact.html">LIÊN HỆ</a></li>
+          <li class="menu-item menu-item-login">
+            <a href="signin.html">ĐĂNG NHẬP</a>
+          </li>
+        </ul>
+      </div>
+      <div class="wrapper">
+        <header class="header">
+          <div class="header-main">
+            <div class="container-content">
+              <div class="header-top">
+                <div class="header-top-item">
+                  <a href=""
+                    ><i class="fa-solid fa-phone"></i> +(024) 2242 0777</a
+                  >
+                  <a href=""
+                    ><i class="fa-solid fa-envelope"></i> info@webhotel.vn</a
+                  >
                 </div>
-            </header>
-            <div class="banner-content">
-                <div class="banner-title">
-                    <h1>Đặt kỳ nghĩ của bạn</h1>
-                    <span>Trang chủ</span>
+              </div>
+              <div class="header-content">
+                <a href="" class="logo"></a>
+                <nav class="menu">
+                  <ul class="menu-list">
+                    <li class="menu-item menu-item-logo">
+                      <a href="home.html"
+                        ><img src="../images/logo.png" alt=""
+                      /></a>
+                    </li>
+                    <li class="menu-item"><a href="home.html">TRANG CHỦ</a></li>
+                    <li class="menu-item">
+                      <a href="about-us.html">GIỚI THIỆU</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="service.html">DỊCH VỤ</a>
+                    </li>
+                    <li class="menu-item"><a href="room.html">PHÒNG</a></li>
+                    <li class="menu-item"><a href="blog.html">DIỄN ĐÀN</a></li>
+                    <li class="menu-item">
+                      <a href="contact.html">LIÊN HỆ</a>
+                    </li>
+                    <li class="menu-item menu-item-login">
+                      <a href="signin.html">ĐĂNG NHẬP</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="banner-content">
+          <div class="banner-title">
+            <h1>Đặt kỳ nghĩ của bạn</h1>
+            <span>Trang chủ</span>
+          </div>
+          <div class="form-search-room">
+            <form action="" class="search-room">
+              <div class="form-group">
+                <label for="">Ngày đến</label>
+                <div class="value-space">
+                  <input type="date" id="check-in" value="2024-10-10" />
                 </div>
-                <div class="form-search-room">
-                    <form action="" class="search-room">
-                        <div class="form-group">
-                            <label for="">Ngày đến</label>
-                            <div class="value-space">
-                                <input type="date" id="check-in" value="2024-10-10">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="">Ngày đi</label>
-                            <div class="value-space">
-                                <input type="date" id="check-out">
-                            </div>
-                        </div>
-                        <div class="form-group form-group-amount">
-                            <div class="combobox">
-                                <label for="">Số người</label>
-                                <select class="amount" name="adult">
-                                    <option value="1" selected>1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                </select>
-                            </div>
-                        </div>
+              </div>
+              <div class="form-group">
+                <label for="">Ngày đi</label>
+                <div class="value-space">
+                  <input type="date" id="check-out" />
+                </div>
+              </div>
+              <div class="form-group form-group-amount">
+                <div class="combobox">
+                  <label for="">Số người</label>
+                  <select class="amount" name="adult" id="numPerson">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </div>
+              </div>
 
-                        <div class="form-group">
-                            <div class="combobox combobox-price">
-                                <label for="">Giá</label>
-                                <select class="price" name="child">
-                                    <option value="1" selected>Dưới <span class="format-VND">200.000</span> VND</option>
-                                    <option value="2"><span class="format-VND">200.000</span> - <span
-                                            class="format-VND">400.000</span> VND</option>
-                                    <option value="3"><span class="format-VND">400.000</span> - <span
-                                            class="format-VND">600.000</span> VND</option>
-                                    <option value="4"><span class="format-VND">600.000</span> - <span
-                                            class="format-VND">800.000</span> VND</option>
-                                    <option value="5"><span class="format-VND">800.000</span> - <span
-                                            class="format-VND">1.000.000</span> VND</option>
-                                    <option value="6">Trên <span class="format-VND"> 1.000.000</span> VND</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group form-button">
-                            <button type="submit" class="button-submit font-white">TÌM PHÒNG</button>
-                        </div>
-                    </form>
+              <div class="form-group">
+                <div class="combobox combobox-price">
+                  <label for="">Giá</label>
+                  <select class="price" name="child" id="price">
+                    <option value="200000" selected>
+                      Dưới <span class="format-VND">200.000</span> VND
+                    </option>
+                    <option value="400000">
+                      <span class="format-VND">200.000</span> -
+                      <span class="format-VND">400.000</span> VND
+                    </option>
+                    <option value="600000">
+                      <span class="format-VND">400.000</span> -
+                      <span class="format-VND">600.000</span> VND
+                    </option>
+                    <option value="800000">
+                      <span class="format-VND">600.000</span> -
+                      <span class="format-VND">800.000</span> VND
+                    </option>
+                    <option value="1000000">
+                      <span class="format-VND">800.000</span> -
+                      <span class="format-VND">1.000.000</span> VND
+                    </option>
+                    <option value="10000000">
+                      Trên <span class="format-VND"> 1.000.000</span> VND
+                    </option>
+                  </select>
                 </div>
-            </div>
+              </div>
+              <div class="form-group form-button">
+                <button type="button" class="button-submit font-white" id="search-room" onclick="Search_room()">
+                  TÌM PHÒNG
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-        <section class="row row-abouts">
-            <div class="title-row">
-                <h1>Thông Tin Về Chúng Tôi</h1>
-                <p>Một sự thanh thản tuyệt vời đã chiếm hữu toàn bộ tâm hồn tôi, như những buổi sáng mùa xuân ngọt ngào
-                    mà tôi tận hưởng bằng cả trái tim mình. Tôi chỉ có một mình, và cảm nhận được sức hấp dẫn của sự tồn
-                    tại ở nơi này, nơi được tạo ra để mang lại niềm hạnh phúc cho tâm hồn.</p>
+      </div>
+      <section class="row row-abouts">
+        <div class="title-row">
+          <h1>Thông Tin Về Chúng Tôi</h1>
+          <p>
+            Một sự thanh thản tuyệt vời đã chiếm hữu toàn bộ tâm hồn tôi, như
+            những buổi sáng mùa xuân ngọt ngào mà tôi tận hưởng bằng cả trái tim
+            mình. Tôi chỉ có một mình, và cảm nhận được sức hấp dẫn của sự tồn
+            tại ở nơi này, nơi được tạo ra để mang lại niềm hạnh phúc cho tâm
+            hồn.
+          </p>
+        </div>
+        <div class="col m-5">
+          <div class="row aboutus-title">
+            <h3 class="col">
+              <i class="fa-solid fa-star"></i>
+              <span>5 Sao</span>
+            </h3>
+            <h3 class="col">
+              <i class="fa-solid fa-door-closed"></i>
+              <span>25 Phòng</span>
+            </h3>
+          </div>
+          <div class="paragraph">
+            <p>
+              Khách sạn của chúng tôi nằm ở trung tâm của New Forrest. Một lối
+              sống năm sao được bao quanh bởi khu rừng.
+            </p>
+          </div>
+          <div class="see-more">
+            <a href=""
+              ><span>XEM THÊM</span><i class="fa-solid fa-chevron-right"></i
+            ></a>
+            <div class="line-see-more"></div>
+          </div>
+        </div>
+        <div class="col">
+          <img src="../images/resort-swim.jpg" alt="" />
+        </div>
+      </section>
+      <section class="row row-room">
+        <div class="title-row">
+          <h1>Phòng Của Chúng Tôi</h1>
+          <p>
+            Một sự thanh thản tuyệt vời đã chiếm hữu toàn bộ tâm hồn tôi, như
+            những buổi sáng mùa xuân ngọt ngào mà tôi tận hưởng bằng cả trái tim
+            mình. Tôi chỉ có một mình, và cảm nhận được sức hấp dẫn của sự tồn
+            tại ở nơi này, nơi được tạo ra để mang lại niềm hạnh phúc cho tâm
+            hồn.
+          </p>
+        </div>
+        <div class="room-properties">
+          <div class="list-room">
+            <div class="room-item">
+              <a href="#" class="room-image" onclick="Deluxe()">
+                <div class="room-price">
+                  Từ <span class="format-VND">300.000</span> VND/ đêm
+                </div>
+                <img src="../images/room/room-1.jpg" alt="" />
+              </a>
+              <div class="room-content">
+                <div class="name-room">Phòng Deluxe hướng thành phố</div>
+                <div class="parameter-room">
+                  <div class="num-of num-of-beds">
+                    <i class="fa-solid fa-bed"></i>
+                    1 giường
+                  </div>
+                  <div class="num-of num-of-person">
+                    <i class="fa-solid fa-users"></i>
+                    2 người
+                  </div>
+                </div>
+                <div class="see-more see-more-room">
+                  <a href="#" onclick="Deluxe()"
+                    ><span>XEM THÊM</span
+                    ><i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                  <div class="line-see-more"></div>
+                </div>
+              </div>
             </div>
-            <div class="col m-5">
-                <div class="row aboutus-title">
-                    <h3 class="col">
-                        <i class="fa-solid fa-star"></i>
-                        <span>5 Sao</span>
-                    </h3>
-                    <h3 class="col">
-                        <i class="fa-solid fa-door-closed"></i>
-                        <span>25 Phòng</span>
-                    </h3>
+            <div class="room-item">
+              <a href="#" class="room-image" onclick="Senior()">
+                <div class="room-price">
+                  Từ <span class="format-VND">400.000</span> VND/ đêm
                 </div>
-                <div class="paragraph">
-                    <p>Khách sạn của chúng tôi nằm ở trung tâm của New Forrest. Một lối sống năm sao được bao quanh bởi
-                        khu rừng.</p>
+                <img src="../images/room/room-2.jpg" alt="" />
+              </a>
+              <div class="room-content">
+                <div class="name-room">Phòng Senior De. Hướng thành phố</div>
+                <div class="parameter-room">
+                  <div class="num-of num-of-beds">
+                    <i class="fa-solid fa-bed"></i>
+                    2 giường
+                  </div>
+                  <div class="num-of num-of-person">
+                    <i class="fa-solid fa-users"></i>
+                    3 người
+                  </div>
                 </div>
+                <div class="see-more see-more-room">
+                  <a href="#" onclick="Senior()"
+                    ><span>XEM THÊM</span
+                    ><i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                  <div class="line-see-more"></div>
+                </div>
+              </div>
+            </div>
+            <div class="room-item">
+              <a href="#" class="room-image" onclick="SuiteTriple()">
+                <div class="room-price">
+                  Từ <span class="format-VND">500.000</span> VND / đêm
+                </div>
+                <img src="../images/room/room-3.jpg" alt="" />
+              </a>
+              <div class="room-content">
+                <div class="name-room">Phòng Suite Triple có Ban công</div>
+                <div class="parameter-room">
+                  <div class="num-of num-of-beds">
+                    <i class="fa-solid fa-bed"></i>
+                    1 giường
+                  </div>
+                  <div class="num-of num-of-person">
+                    <i class="fa-solid fa-users"></i>
+                    2 người
+                  </div>
+                </div>
+                <div class="see-more see-more-room">
+                  <a href="#" onclick="SuiteTriple()"
+                    ><span>XEM THÊM</span
+                    ><i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                  <div class="line-see-more"></div>
+                </div>
+              </div>
+            </div>
+            <div class="room-item">
+              <a href="#" class="room-image" onclick="FamilySuite()">
+                <div class="room-price">
+                  Từ <span class="format-VND">600.000</span> VND/ đêm
+                </div>
+                <img src="../images/room/room-4.jpg" alt="" />
+              </a>
+              <div class="room-content">
+                <div class="name-room">Phòng Family Suite có ban công</div>
+                <div class="parameter-room">
+                  <div class="num-of num-of-beds">
+                    <i class="fa-solid fa-bed"></i>
+                    1 giường
+                  </div>
+                  <div class="num-of num-of-person">
+                    <i class="fa-solid fa-users"></i>
+                    2 người
+                  </div>
+                </div>
+                <div class="see-more see-more-room">
+                  <a href="#" onclick="FamilySuite()"
+                    ><span>XEM THÊM</span
+                    ><i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                  <div class="line-see-more"></div>
+                </div>
+              </div>
+            </div>
+            <div class="room-item">
+              <a href="#" onclick="Connecting()" class="room-image">
+                <div class="room-price">
+                  Từ <span class="format-VND">900.000</span> VND / đêm
+                </div>
+                <img src="../images/room/room-1.jpg" alt="" />
+              </a>
+              <div class="room-content">
+                <div class="name-room">Phòng Connecting</div>
+                <div class="parameter-room">
+                  <div class="num-of num-of-beds">
+                    <i class="fa-solid fa-bed"></i>
+                    2 giường
+                  </div>
+                  <div class="num-of num-of-person">
+                    <i class="fa-solid fa-users"></i>
+                    4 người
+                  </div>
+                </div>
+                <div class="see-more see-more-room">
+                  <a href="#" onclick="Connecting()"
+                    ><span>XEM THÊM</span
+                    ><i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                  <div class="line-see-more"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="see-more see-more-all-room">
+            <a href=""
+              ><span>XEM TẤT CẢ CÁC PHÒNG</span
+              ><i class="fa-solid fa-chevron-right"></i
+            ></a>
+            <div class="line-see-more"></div>
+          </div>
+        </div>
+      </section>
+      <section class="row row-extension">
+        <div class="title-row">
+          <h1>Các Tiện Ích Của Khách Sạn</h1>
+          <p>
+            Một sự thanh thản tuyệt vời đã chiếm hữu toàn bộ tâm hồn tôi, như
+            những buổi sáng mùa xuân ngọt ngào mà tôi tận hưởng bằng cả trái tim
+            mình.
+          </p>
+        </div>
+        <div class="w-100">
+          <ul class="list-extension">
+            <li class="item-extension">
+              <div class="item-ext">
+                <img src="../images/icon/pool.png" alt="" />
+                <h3>Bãi đỗ xe</h3>
+              </div>
+            </li>
+            <li class="item-extension">
+              <div class="item-ext">
+                <img src="../images/icon/parking.png" alt="" />
+                <h3>Bể bơi</h3>
+              </div>
+            </li>
+            <li class="item-extension">
+              <div class="item-ext">
+                <img src="../images/icon/spa.png" alt="" />
+                <h3>Spa</h3>
+              </div>
+            </li>
+            <li class="item-extension">
+              <div class="item-ext">
+                <img src="../images/icon/safety-box.png" alt="" />
+                <h3>Két sắt</h3>
+              </div>
+            </li>
+            <li class="item-extension">
+              <div class="item-ext">
+                <img src="../images/icon/wifi.png" alt="" />
+                <h3>Wifi</h3>
+              </div>
+            </li>
+            <li class="item-extension">
+              <div class="item-ext">
+                <img src="../images/icon/gym.png" alt="" />
+                <h3>Gym</h3>
+              </div>
+            </li>
+            <li class="item-extension">
+              <div class="item-ext">
+                <img src="../images/icon/break-fast.png" alt="" />
+                <h3>Ăn sáng</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="row row-video d-flex justify-content-center">
+        <video
+          class="video-hotel"
+          src="../videos/Luxury Resort & Hotel in Indonesia - Aman-(1080p).mp4"
+          controls></video>
+      </section>
+      <section class="row row-service">
+        <div class="title-row">
+          <h1>Ghé Thăm Các Cơ Sở Nổi Tiếng Của Chúng Tôi</h1>
+          <p>
+            Một sự thanh thản tuyệt vời đã chiếm hữu toàn bộ tâm hồn tôi, như
+            những buổi sáng mùa xuân ngọt ngào mà tôi tận hưởng bằng cả trái tim
+            mình.
+          </p>
+        </div>
+        <div class="service">
+          <ul class="list-service">
+            <li class="item-service">
+              <div class="content-service">
+                <h1>Nhà hàng</h1>
+                <p>
+                  Hệ thống sảnh tiệc lớn, linh hoạt, được đầu tư trang thiết bị
+                  hiện đại sẽ luôn là gợi ý tuyệt vời cho những tiệc cưới, hội
+                  nghị đẳng cấp.
+                </p>
                 <div class="see-more">
-                    <a href=""><span>XEM THÊM</span><i class="fa-solid fa-chevron-right"></i></a>
-                    <div class="line-see-more"></div>
+                  <a href="service-detail.html" onclick="Res()"
+                    ><span>ĐỌC THÊM</span
+                    ><i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                  <div class="line-see-more"></div>
                 </div>
-            </div>
-            <div class="col">
-                <img src="../images/resort-swim.jpg" alt="">
-            </div>
-        </section>
-        <section class="row row-room">
-            <div class="title-row">
-                <h1>Phòng Của Chúng Tôi</h1>
-                <p>Một sự thanh thản tuyệt vời đã chiếm hữu toàn bộ tâm hồn tôi, như những buổi sáng mùa xuân ngọt ngào
-                    mà tôi tận hưởng bằng cả trái tim mình. Tôi chỉ có một mình, và cảm nhận được sức hấp dẫn của sự tồn
-                    tại ở nơi này, nơi được tạo ra để mang lại niềm hạnh phúc cho tâm hồn.</p>
-            </div>
-            <div class="room-properties">
-                <div class="list-room">
-                    <div class="room-item">
-                        <a href="" class="room-image">
-                            <div class="room-price">
-                                Từ <span class="format-VND">300.000</span> VND/ đêm
-                            </div>
-                            <img src="../images/room/room-1.jpg" alt="">
-
-                        </a>
-                        <div class="room-content">
-                            <div class="name-room">Phòng Deluxe hướng thành phố</div>
-                            <div class="parameter-room">
-                                <div class="num-of num-of-beds">
-                                    <i class="fa-solid fa-bed"></i>
-                                    1 giường
-                                </div>
-                                <div class="num-of num-of-person">
-                                    <i class="fa-solid fa-users"></i>
-                                    2 người
-                                </div>
-                            </div>
-                            <div class="see-more see-more-room">
-                                <a href=""><span>XEM THÊM</span><i class="fa-solid fa-chevron-right"></i></a>
-                                <div class="line-see-more"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="room-item">
-                        <a href="" class="room-image">
-                            <div class="room-price">
-                                Từ <span class="format-VND">400.000</span> VND/ đêm
-                            </div>
-                            <img src="../images/room/room-2.jpg" alt="">
-
-                        </a>
-                        <div class="room-content">
-                            <div class="name-room">Phòng Senior De. Hướng thành phố</div>
-                            <div class="parameter-room">
-                                <div class="num-of num-of-beds">
-                                    <i class="fa-solid fa-bed"></i>
-                                    2 giường
-                                </div>
-                                <div class="num-of num-of-person">
-                                    <i class="fa-solid fa-users"></i>
-                                    3 người
-                                </div>
-                            </div>
-                            <div class="see-more see-more-room">
-                                <a href=""><span>XEM THÊM</span><i class="fa-solid fa-chevron-right"></i></a>
-                                <div class="line-see-more"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="room-item">
-                        <a href="" class="room-image">
-                            <div class="room-price">
-                                Từ <span class="format-VND">500.000</span> VND / đêm
-                            </div>
-                            <img src="../images/room/room-3.jpg" alt="">
-
-                        </a>
-                        <div class="room-content">
-                            <div class="name-room">Phòng Suite Triple có Ban công</div>
-                            <div class="parameter-room">
-                                <div class="num-of num-of-beds">
-                                    <i class="fa-solid fa-bed"></i>
-                                    1 giường
-                                </div>
-                                <div class="num-of num-of-person">
-                                    <i class="fa-solid fa-users"></i>
-                                    2 người
-                                </div>
-                            </div>
-                            <div class="see-more see-more-room">
-                                <a href=""><span>XEM THÊM</span><i class="fa-solid fa-chevron-right"></i></a>
-                                <div class="line-see-more"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="room-item">
-                        <a href="" class="room-image">
-                            <div class="room-price">
-                                Từ <span class="format-VND">600.000</span> VND/ đêm
-                            </div>
-                            <img src="../images/room/room-4.jpg" alt="">
-
-                        </a>
-                        <div class="room-content">
-                            <div class="name-room">Phòng Family Suite có ban công</div>
-                            <div class="parameter-room">
-                                <div class="num-of num-of-beds">
-                                    <i class="fa-solid fa-bed"></i>
-                                    1 giường
-                                </div>
-                                <div class="num-of num-of-person">
-                                    <i class="fa-solid fa-users"></i>
-                                    2 người
-                                </div>
-                            </div>
-                            <div class="see-more see-more-room">
-                                <a href=""><span>XEM THÊM</span><i class="fa-solid fa-chevron-right"></i></a>
-                                <div class="line-see-more"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="room-item">
-                        <a href="" class="room-image">
-                            <div class="room-price">
-                                Từ <span class="format-VND">900.000</span> VND / đêm
-                            </div>
-                            <img src="../images/room/room-1.jpg" alt="">
-
-                        </a>
-                        <div class="room-content">
-                            <div class="name-room">Phòng Connecting</div>
-                            <div class="parameter-room">
-                                <div class="num-of num-of-beds">
-                                    <i class="fa-solid fa-bed"></i>
-                                    2 giường
-                                </div>
-                                <div class="num-of num-of-person">
-                                    <i class="fa-solid fa-users"></i>
-                                    4 người
-                                </div>
-                            </div>
-                            <div class="see-more see-more-room">
-                                <a href=""><span>XEM THÊM</span><i class="fa-solid fa-chevron-right"></i></a>
-                                <div class="line-see-more"></div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="image-service">
+                <img src="../images/service/chef-cook.png" alt="" />
+              </div>
+            </li>
+            <li class="item-service item-service-even">
+              <div class="image-service">
+                <img src="../images/service/spa.png" alt="" />
+              </div>
+              <div class="content-service">
+                <h1>Spa Hotale</h1>
+                <p>
+                  Lạc vào ốc đảo Spa Hotale Hotel sang trọng và quyến rũ để tận
+                  hưởng những phút giây thư giãn tuyệt đối giữa thiên nhiên. Tại
+                  đây, bạn có thể đắm mình trong những trải nghiệm spa độc đáo
+                </p>
+                <div class="see-more">
+                  <a href="service-detail.html" onclick="SpaHotale()"
+                    ><span>ĐỌC THÊM</span
+                    ><i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                  <div class="line-see-more"></div>
                 </div>
-
-            </div>
-            <div class="d-flex justify-content-center">
-                <div class="see-more see-more-all-room">
-                    <a href=""><span>XEM TẤT CẢ CÁC PHÒNG</span><i class="fa-solid fa-chevron-right"></i></a>
-                    <div class="line-see-more"></div>
+              </div>
+            </li>
+            <li class="item-service">
+              <div class="content-service">
+                <h1>Sky Bar</h1>
+                <p>
+                  Kỷ niệm khoảnh khắc của bạn với một trong những điểm nổi bật
+                  của chúng tôi về cocktail hoặc nếu bạn thích, tuyển chọn các
+                  loại trà quốc tế và cà phê có nguồn gốc địa phương có sẵn nóng
+                  hoặc đá giải khát.
+                </p>
+                <div class="see-more">
+                  <a href="service-detail.html" onclick="SkyBar()"
+                    ><span>ĐỌC THÊM</span
+                    ><i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                  <div class="line-see-more"></div>
                 </div>
+              </div>
+              <div class="image-service">
+                <img src="../images/service/bar.png" alt="" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="row row-news">
+        <div class="title-row">
+          <h1>Tin Tức Và Đề Nghị</h1>
+          <p>
+            Như những tia nắng nhẹ vuốt nhẹ lên bề mặt da, sự thanh thản hiện
+            hữu trong tâm hồn tôi giống như làn hương của những bông hoa mùa
+            xuân, tinh tế và ngọt ngào. Mỗi khoảnh khắc tỏa ra sự nhẹ nhàng và
+            yên bình, như một bức tranh sống động của cuộc sống.
+          </p>
+        </div>
+        <div class="list-news">
+          <div class="news-item">
+            <a href="blog-detail.html" class="news-image">
+              <img src="../images/news/new-1.png" alt="" />
+            </a>
+            <div class="news-content">
+              <div class="news-title">
+                Các thành phố nên đến thăm lần đầu tiên ở châu Âu
+              </div>
+              <div class="news-time">
+                <i class="fa-solid fa-clock"></i>
+                16/7/2022
+              </div>
             </div>
-
-        </section>
-        <section class="row row-extension">
-            <div class="title-row">
-                <h1>Các Tiện Ích Của Khách Sạn</h1>
-                <p>Một sự thanh thản tuyệt vời đã chiếm hữu toàn bộ tâm hồn tôi, như những buổi sáng mùa xuân ngọt ngào
-                    mà tôi tận hưởng bằng cả trái tim mình.</p>
+          </div>
+          <div class="news-item">
+            <a href="blog-detail.html" class="news-image">
+              <img src="../images/news/new-2.png" alt="" />
+            </a>
+            <div class="news-content">
+              <div class="news-title">
+                Các thành phố nên đến thăm lần đầu tiên ở châu Âu 2
+              </div>
+              <div class="news-time">
+                <i class="fa-solid fa-clock"></i>
+                16/7/2022
+              </div>
             </div>
-            <div class="w-100">
-                <ul class="list-extension">
-                    <li class="item-extension">
-                        <div class="item-ext">
-                            <img src="../images/icon/pool.png" alt="">
-                            <h3>Bãi đỗ xe</h3>
-                        </div>
-                    </li>
-                    <li class="item-extension">
-                        <div class="item-ext">
-                            <img src="../images/icon/parking.png" alt="">
-                            <h3>Bể bơi</h3>
-                        </div>
-                    </li>
-                    <li class="item-extension">
-                        <div class="item-ext">
-                            <img src="../images/icon/spa.png" alt="">
-                            <h3>Spa</h3>
-                        </div>
-                    </li>
-                    <li class="item-extension">
-                        <div class="item-ext">
-                            <img src="../images/icon/safety-box.png" alt="">
-                            <h3>Két sắt</h3>
-                        </div>
-                    </li>
-                    <li class="item-extension">
-                        <div class="item-ext">
-                            <img src="../images/icon/wifi.png" alt="">
-                            <h3>Wifi</h3>
-                        </div>
-                    </li>
-                    <li class="item-extension">
-                        <div class="item-ext">
-                            <img src="../images/icon/gym.png" alt="">
-                            <h3>Gym</h3>
-                        </div>
-                    </li>
-                    <li class="item-extension">
-                        <div class="item-ext">
-                            <img src="../images/icon/break-fast.png" alt="">
-                            <h3>Ăn sáng</h3>
-                        </div>
-                    </li>
-                </ul>
+          </div>
+          <div class="news-item">
+            <a href="blog-detail.html" class="news-image">
+              <img src="../images/news/new-3.png" alt="" />
+            </a>
+            <div class="news-content">
+              <div class="news-title">Mẹo chọn chỗ cho kì nghĩ</div>
+              <div class="news-time">
+                <i class="fa-solid fa-clock"></i>
+                16/7/2022
+              </div>
             </div>
-        </section>
-        <section class="row row-video d-flex justify-content-center">
-            <video class="video-hotel" src="../videos/Luxury Resort & Hotel in Indonesia - Aman-(1080p).mp4"
-                controls></video>
-        </section>
-        <section class="row row-service">
-            <div class="title-row">
-                <h1>Ghé Thăm Các Cơ Sở Nổi Tiếng Của Chúng Tôi</h1>
-                <p>Một sự thanh thản tuyệt vời đã chiếm hữu toàn bộ tâm hồn tôi, như những buổi sáng mùa xuân ngọt ngào
-                    mà tôi tận hưởng bằng cả trái tim mình.</p>
-            </div>
-            <div class="service">
-                <ul class="list-service">
-                    <li class="item-service">
-                        <div class="content-service">
-                            <h1>Nhà hàng</h1>
-                            <p>Hệ thống sảnh tiệc lớn, linh hoạt, được đầu tư trang thiết bị hiện đại sẽ luôn là gợi ý
-                                tuyệt vời cho những tiệc cưới, hội nghị đẳng cấp.</p>
-                            <div class="see-more">
-                                <a href=""><span>ĐỌC THÊM</span><i class="fa-solid fa-chevron-right"></i></a>
-                                <div class="line-see-more"></div>
-                            </div>
-                        </div>
-                        <div class="image-service">
-                            <img src="../images/service/chef-cook.png" alt="">
-                        </div>
-                    </li>
-                    <li class="item-service item-service-even">
-                        <div class="image-service">
-                            <img src="../images/service/spa.png" alt="">
-                        </div>
-                        <div class="content-service">
-                            <h1>Spa Hotale</h1>
-                            <p>Lạc vào ốc đảo Spa Hotale Hotel sang trọng và quyến rũ để tận hưởng những phút giây thư
-                                giãn tuyệt đối giữa thiên nhiên. Tại đây, bạn có thể đắm mình trong những trải nghiệm
-                                spa độc đáo</p>
-                            <div class="see-more">
-                                <a href=""><span>ĐỌC THÊM</span><i class="fa-solid fa-chevron-right"></i></a>
-                                <div class="line-see-more"></div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="item-service">
-                        <div class="content-service">
-                            <h1>Sky Bar</h1>
-                            <p>Kỷ niệm khoảnh khắc của bạn với một trong những điểm nổi bật của chúng tôi về cocktail
-                                hoặc nếu bạn thích, tuyển chọn các loại trà quốc tế và cà phê có nguồn gốc địa phương có
-                                sẵn nóng hoặc đá giải khát.</p>
-                            <div class="see-more">
-                                <a href=""><span>ĐỌC THÊM</span><i class="fa-solid fa-chevron-right"></i></a>
-                                <div class="line-see-more"></div>
-                            </div>
-                        </div>
-                        <div class="image-service">
-                            <img src="../images/service/bar.png" alt="">
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="row row-news">
-            <div class="title-row">
-                <h1>Tin Tức Và Đề Nghị</h1>
-                <p>Như những tia nắng nhẹ vuốt nhẹ lên bề mặt da, sự thanh thản hiện hữu trong tâm hồn tôi giống như làn
-                    hương của những bông hoa mùa xuân, tinh tế và ngọt ngào. Mỗi khoảnh khắc tỏa ra sự nhẹ nhàng và yên
-                    bình, như một bức tranh sống động của cuộc sống.</p>
-            </div>
-            <div class="list-news">
-                <div class="news-item">
-                    <a href="" class="news-image">
-                        <img src="../images/news/new-1.png" alt="">
-                    </a>
-                    <div class="news-content">
-                        <div class="news-title">Các thành phố nên đến thăm lần đầu tiên ở châu Âu</div>
-                        <div class="news-time">
-                            <i class="fa-solid fa-clock"></i>
-                            16/7/2022
-                        </div>
-                    </div>
-                </div>
-                <div class="news-item">
-                    <a href="" class="news-image">
-                        <img src="../images/news/new-2.png" alt="">
-                    </a>
-                    <div class="news-content">
-                        <div class="news-title">Các thành phố nên đến thăm lần đầu tiên ở châu Âu 2</div>
-                        <div class="news-time">
-                            <i class="fa-solid fa-clock"></i>
-                            16/7/2022
-                        </div>
-                    </div>
-                </div>
-                <div class="news-item">
-                    <a href="" class="news-image">
-                        <img src="../images/news/new-3.png" alt="">
-                    </a>
-                    <div class="news-content">
-                        <div class="news-title">Mẹo chọn chỗ cho kì nghĩ</div>
-                        <div class="news-time">
-                            <i class="fa-solid fa-clock"></i>
-                            16/7/2022
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center">
-                <div class="see-more see-more-all-news">
-                    <a href=""><span>ĐỌC THÊM</span><i class="fa-solid fa-chevron-right"></i></a>
-                    <div class="line-see-more"></div>
-                </div>
-            </div>
-
-        </section>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="see-more see-more-all-news">
+            <a href=""
+              ><span>ĐỌC THÊM</span><i class="fa-solid fa-chevron-right"></i
+            ></a>
+            <div class="line-see-more"></div>
+          </div>
+        </div>
+      </section>
     </div>
     <footer class="footer">
-        <div class="footer-item">
-            <div class="footer-img">
-                <img src="../images/logo.png" alt="">
-            </div>
-            <div class="social">
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-pinterest-p"></i>
-                <i class="fa-brands fa-instagram"></i>
-            </div>
+      <div class="footer-item">
+        <div class="footer-img">
+          <img src="../images/logo.png" alt="" />
         </div>
-        <div class="footer-item">
-            <div class="footer-item-content footer-item-content-title">LIÊN HỆ</div>
-            <div class="footer-item-content">Số Điện Thoại: (024) 2242 0777</div>
-            <div class="footer-item-content">Email: info@webhotel.vn</div>
+        <div class="social">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-pinterest-p"></i>
+          <i class="fa-brands fa-instagram"></i>
         </div>
-        <div class="footer-item">
-            <div class="footer-item-content footer-item-content-title">ĐỊA CHỈ KHÁCH SẠN</div>
-            <div class="footer-item-content">Số 147 Mai Dịch, Cầu Giấy, Hà Nội</div>
+      </div>
+      <div class="footer-item">
+        <div class="footer-item-content footer-item-content-title">LIÊN HỆ</div>
+        <div class="footer-item-content">Số Điện Thoại: (024) 2242 0777</div>
+        <div class="footer-item-content">Email: info@webhotel.vn</div>
+      </div>
+      <div class="footer-item">
+        <div class="footer-item-content footer-item-content-title">
+          ĐỊA CHỈ KHÁCH SẠN
         </div>
-        <div class="footer-item">
-            <div class="footer-img">
-                <img src="../images/footer-banner.png" alt="">
-            </div>
-            <div class="footer-img">
-                <img src="../images/footer-cards-300x53.png" alt="">
-            </div>
+        <div class="footer-item-content">Số 147 Mai Dịch, Cầu Giấy, Hà Nội</div>
+      </div>
+      <div class="footer-item">
+        <div class="footer-img">
+          <img src="../images/footer-banner.png" alt="" />
         </div>
+        <div class="footer-img">
+          <img src="../images/footer-cards-300x53.png" alt="" />
+        </div>
+      </div>
     </footer>
-    <script src="../js/home.js"></script>
-</body>
-
+  </body>
 </html>

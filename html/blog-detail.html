@@ -57,7 +57,7 @@
                     ><i class="fa-solid fa-phone"></i> +(024) 2242 0777</a
                   >
                   <a href=""
-                    ><i class="fa-solid fa-envelope"></i> info@webhotel.vn</a
+                    ><i class="fa-solid fa-envelope"></i> nhom7@gmail.com</a
                   >
                 </div>
               </div>
@@ -92,8 +92,8 @@
           </div>
         </header>
         <div class="banner-content">
-          <h1 id="blog-title">
-            Các thành phố bạn nên ghé thăm lần đầu tiên ở Châu Âu
+          <h1 id="title">
+            
           </h1>
         </div>
       </div>
@@ -105,9 +105,7 @@
               <div class="row mb-4">
                 <div class="col">
                   <p>
-                    <b style="font-size: 23px"
-                      >Ở một nơi xa xôi, sau những ngọn núi,</b
-                    >
+                    <b style="font-size: 23px" id="p">Ở một nơi xa xôi, sau những ngọn núi,</b>
                     xa xôi hơn cả các quốc gia Vokalia và Consonantia, có những
                     đoạn sương mù. Xa cách nhau ở Bookmarksgrove, ngay bên bờ
                     biển của Semantics, một đại dương rộng lớn. Có một dòng sông
@@ -120,11 +118,7 @@
               <div class="row">
                 <div class="col">
                   <p>
-                    <img
-                      src="../images/blog_detail/blog-detail-1.jpg"
-                      alt=""
-                      style="width: 50%; height: 80%; margin: 0px 40px 10px 0px"
-                      align="left" />
+                    <img id="img1" src="" alt="" style="width: 50%; height: 80%; margin: 0px 40px 10px 0px" align="left" />
                     "Ở một vùng đất xa xôi, nằm đằng sau những ngọn núi cao, xa
                     xôi hơn cả các quốc gia Vokalia và Consonantia, tồn tại
                     những câu chuyện mù lưu trú. Họ sống tách biệt nhau tại
@@ -163,18 +157,18 @@
                   <div class="row mt-3 mb-4">
                     <div class="col">
                       <img
-                        src="../images/blog_detail/blog-detail-2.jpg"
-                        alt="" />
+                        src=""
+                        alt="" id="img2"/>
                     </div>
                     <div class="col">
                       <img
-                        src="../images/blog_detail/blog-detail-3.jpg"
-                        alt="" />
+                        src=""
+                        alt="" id="img3"/>
                     </div>
                     <div class="col">
                       <img
-                        src="../images/blog_detail/blog-detail-4.jpg"
-                        alt="" />
+                        src=""
+                        alt="" id="img4"/>
                     </div>
                   </div>
                   <div class="row mb-5">
@@ -241,7 +235,7 @@
                           </span>
                         </div>
                         <div class="post-title">
-                          <a href="">
+                          <a href="#" onclick="Europe()">
                             Các thành phố bạn nên ghé thăm lần đầu tiên ở Châu
                             Âu
                           </a>
@@ -263,7 +257,7 @@
                           </span>
                         </div>
                         <div class="post-title">
-                          <a href="" id="test">
+                          <a href="#" onclick="Europe2()">
                             Các thành phố bạn nên ghé thăm lần đầu tiên ở Châu
                             Âu 2
                           </a>
@@ -308,13 +302,13 @@
       <div class="footer-item">
         <div class="footer-item-content footer-item-content-title">LIÊN HỆ</div>
         <div class="footer-item-content">Số Điện Thoại: (024) 2242 0777</div>
-        <div class="footer-item-content">Email: info@webhotel.vn</div>
+        <div class="footer-item-content">Email: nhom7@gmail.com</div>
       </div>
       <div class="footer-item">
         <div class="footer-item-content footer-item-content-title">
           ĐỊA CHỈ KHÁCH SẠN
         </div>
-        <div class="footer-item-content">Số 147 Mai Dịch, Cầu Giấy, Hà Nội</div>
+        <div class="footer-item-content">12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, Thành phố Hồ Chí Minh</div>
       </div>
       <div class="footer-item">
         <div class="footer-img">
@@ -326,5 +320,38 @@
       </div>
     </footer>
     <script src="../js/home.js"></script>
+    <script>
+        document.getElementById("title").innerHTML=localStorage.getItem("tt");
+        document.getElementById("img1").src=localStorage.getItem("i1");
+        document.getElementById("img2").src=localStorage.getItem("i2");
+        document.getElementById("img3").src=localStorage.getItem("i3");
+        document.getElementById("img4").src=localStorage.getItem("i4");
+    function Europe(){
+      let title = "Các thành phố bạn nên ghé thăm lần đầu tiên ở Châu Âu";
+      let img1 = "../images/blog_detail/blog-detail-1.jpg";
+      let img2 = "../images/blog_detail/blog-detail-2.jpg";
+      let img3 = "../images/blog_detail/blog-detail-3.jpg";
+      let img4 = "../images/blog_detail/blog-detail-4.jpg";
+      localStorage.setItem("tt", title);
+      localStorage.setItem("i1", img1);
+      localStorage.setItem("i2", img2);
+      localStorage.setItem("i3", img3);
+      localStorage.setItem("i4", img4);
+      window.location.href = "blog-detail.html";
+    }
+    function Europe2(){
+      let title = "Các thành phố bạn nên ghé thăm lần đầu tiên ở Châu Âu 2";
+      let img1 = "../images/blog_detail/blog-detail-9.jpeg";
+      let img2 = "../images/blog_detail/blog-detail-6.jpeg";
+      let img3 = "../images/blog_detail/blog-detail-7.jpeg";
+      let img4 = "../images/blog_detail/blog-detail-8.jpeg";
+      localStorage.setItem("tt", title);
+      localStorage.setItem("i1", img1);
+      localStorage.setItem("i2", img2);
+      localStorage.setItem("i3", img3);
+      localStorage.setItem("i4", img4);
+      window.location.href = "blog-detail.html";
+    }
+    </script>
   </body>
 </html>

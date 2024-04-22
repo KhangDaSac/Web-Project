@@ -53,7 +53,7 @@
             <div class="header-top">
               <div class="header-top-item">
                 <a href=""><i class="fa-solid fa-phone"></i> +(024) 2242 0777</a>
-                <a href=""><i class="fa-solid fa-envelope"></i> info@webhotel.vn</a>
+                <a href=""><i class="fa-solid fa-envelope"></i> nhom7@gmail.com</a>
               </div>
             </div>
             <div class="header-content">
@@ -87,7 +87,7 @@
             <div class="list-page">
               <div class="list-page__item">
                 <div class="thumd">
-                  <a href="#">
+                  <a href="#" onclick="Europe()">
                     <div class="coverimg">
                       <img src="../images/news/news-1.png" alt="">
                     </div>
@@ -96,7 +96,7 @@
                 <div class="desc">
                   <div class="desc-head">
                     <h3 class="blog-title">
-                      <a href="blog-detail.html">
+                      <a href="#" onclick="Europe()">
                         Các thành phố bạn nên ghé thăm lần đầu tiên ở Châu Âu
                       </a>
                     </h3>
@@ -129,7 +129,7 @@
                       <span style="color:rgb(101, 101, 101)">Xa xa, đằng sau những ngọn núi chữ, xa những đất nước
                         Vokalia và Consonantia, đau đớn chính là ngồi một chỗ.</span>
                     </p>
-                    <a href="blog-detail.html" class="book-link">
+                    <a href="#" class="book-link" onclick="Europe()">
                       Xem thêm
                     </a>
                   </div>
@@ -137,7 +137,7 @@
               </div>
               <div class="list-page__item">
                 <div class="thumd">
-                  <a href="#">
+                  <a href="#" onclick="Europe2()">
                     <div class="coverimg">
                       <img src="../images/news/news-2.png" alt="">
                     </div>
@@ -146,7 +146,7 @@
                 <div class="desc">
                   <div class="desc-head">
                     <h3 class="blog-title">
-                      <a href="blog-detail.html">
+                      <a href="#" onclick="Europe2()">
                         Các thành phố bạn nên ghé thăm lần đầu tiên ở Châu Âu 2
                       </a>
                     </h3>
@@ -179,7 +179,7 @@
                       <span style="color:rgb(101, 101, 101)">Xa xa, đằng sau những ngọn núi chữ, xa những đất nước
                         Vokalia và Consonantia, đau đớn chính là ngồi một chỗ.</span>
                     </p>
-                    <a href="blog-detail.html" class="book-link">
+                    <a href="#" class="book-link" onclick="Europe2()">
                       Xem thêm
                     </a>
                   </div>
@@ -197,7 +197,7 @@
                 <div class="recent-list">
                   <div class="recent-list__item">
                     <div class="thumd">
-                      <a href="#">
+                      <a href="#" onclick="Europe()">
                         <div class="coverimage">
                           <img src="../images/news/news-1.png" alt="">
                         </div>
@@ -213,7 +213,7 @@
                         </span>
                       </div>
                       <div class="post-title">
-                        <a href="blog-detail.html">
+                        <a href="#" onclick="Europe()">
                           Các thành phố bạn nên ghé thăm lần đầu tiên ở Châu Âu
                         </a>
                       </div>
@@ -221,7 +221,7 @@
                   </div>
                   <div class="recent-list__item">
                     <div class="thumd">
-                      <a href="#">
+                      <a href="#" onclick="Europe2()">
                         <div class="coverimage">
                           <img src="../images/news/news-2.png" alt="">
                         </div>
@@ -237,7 +237,7 @@
                         </span>
                       </div>
                       <div class="post-title">
-                        <a href="blog-detail.html">
+                        <a href="#" onclick="Europe2()">
                           Các thành phố bạn nên ghé thăm lần đầu tiên ở Châu Âu 2
                         </a>
                       </div>
@@ -284,11 +284,11 @@
     <div class="footer-item">
       <div class="footer-item-content footer-item-content-title">LIÊN HỆ</div>
       <div class="footer-item-content">Số Điện Thoại: (024) 2242 0777</div>
-      <div class="footer-item-content">Email: info@webhotel.vn</div>
+      <div class="footer-item-content">Email: nhom7@gmail.com</div>
     </div>
     <div class="footer-item">
       <div class="footer-item-content footer-item-content-title">ĐỊA CHỈ KHÁCH SẠN</div>
-      <div class="footer-item-content">Số 147 Mai Dịch, Cầu Giấy, Hà Nội</div>
+      <div class="footer-item-content">12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, Thành phố Hồ Chí Minh</div>
     </div>
     <div class="footer-item">
       <div class="footer-img">
@@ -300,6 +300,33 @@
     </div>
   </footer>
   <script src="../js/home.js"></script>
+  <script>
+    function Europe(){
+      let title = "Các thành phố bạn nên ghé thăm lần đầu tiên ở Châu Âu";
+      let img1 = "../images/blog_detail/blog-detail-1.jpg";
+      let img2 = "../images/blog_detail/blog-detail-2.jpg";
+      let img3 = "../images/blog_detail/blog-detail-3.jpg";
+      let img4 = "../images/blog_detail/blog-detail-4.jpg";
+      localStorage.setItem("tt", title);
+      localStorage.setItem("i1", img1);
+      localStorage.setItem("i2", img2);
+      localStorage.setItem("i3", img3);
+      localStorage.setItem("i4", img4);
+      window.location.href = "blog-detail.html";
+    }
+    function Europe2(){
+      let title = "Các thành phố bạn nên ghé thăm lần đầu tiên ở Châu Âu 2";
+      let img1 = "../images/blog_detail/blog-detail-9.jpeg";
+      let img2 = "../images/blog_detail/blog-detail-6.jpeg";
+      let img3 = "../images/blog_detail/blog-detail-7.jpeg";
+      let img4 = "../images/blog_detail/blog-detail-8.jpeg";
+      localStorage.setItem("tt", title);
+      localStorage.setItem("i1", img1);
+      localStorage.setItem("i2", img2);
+      localStorage.setItem("i3", img3);
+      localStorage.setItem("i4", img4);
+      window.location.href = "blog-detail.html";
+    }
+  </script>
 </body>
-
 </html>

@@ -14,12 +14,16 @@
     border-radius: 50px;
     width: 97%;
     background-image: url(../images/home-resort-hero-bg.png);
-    height: 880px;
+    height: 920px;
 }
 
 .menu-item-login > a{
     border: 2px solid white;
     border-radius: 10px;
+}
+
+.trencung{
+    font-family: "Jost", sans-serif;
 }
 
 .log{

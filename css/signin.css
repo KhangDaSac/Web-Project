@@ -5,20 +5,25 @@
 
 .header{
     background: linear-gradient(black, rgba(0, 0, 0, 0));
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     width: 100%;
+    margin-top: 30px;
 }
 .container{
     border-radius: 50px;
     width: 97%;
     background-image: url(../images/home-resort-hero-bg.png);
-    height: 870px;
+    height: 880px;
 }
 
 .menu-item-login > a{
     border: 2px solid white;
     border-radius: 10px;
+}
+
+.log{
+    width: 220px;
 }
 
 .header-top-item{
@@ -254,11 +259,13 @@ form{
     background-color: #000;
     display: flex;
     justify-content: space-around;
+    font-family: "Jost", sans-serif;
     flex-wrap: wrap;
     color: #fff;
     padding: 30px 20px;
     border-radius: 50px;
     font-size: 18px;
+    margin-top: 5px;
 }
 
 .footer-item{
@@ -268,8 +275,7 @@ form{
 }
 
 .footer-item > *{
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 13px;
 }
 
 .footer-item-content-title{
@@ -278,6 +284,7 @@ form{
 
 .footer-img > img{
     width: 60%;
+    
 }
 
 .error{

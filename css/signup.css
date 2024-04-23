@@ -5,10 +5,16 @@
 
 .header{
     background: linear-gradient(black, rgba(0, 0, 0, 0));
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     width: 100%;
+    margin-top: 30px;
 }
+
+.log{
+    width: 220px;
+}
+
 .container{
     border-radius: 50px;
     width: 97%;
@@ -240,13 +246,15 @@ form{
 
 .footer{
     background-color: #000;
+    font-family: "Jost", sans-serif;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    color: rgb(248, 239, 229);
+    color: #fff;
     padding: 30px 20px;
     border-radius: 50px;
     font-size: 18px;
+    margin-top: 5px;
 }
 
 .footer-item{
@@ -256,8 +264,7 @@ form{
 }
 
 .footer-item > *{
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 13px;
 }
 
 .footer-item-content-title{

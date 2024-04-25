@@ -15,8 +15,7 @@
 }
 .booking-main{
     display: flex;
-    margin-top: 400px;
-    
+    margin-top: 300px;
 }
 .box-left{
     margin-top: 50px;
@@ -120,18 +119,19 @@ table,textarea{
     background-color: rgba(20,64,74,255);
 }
 .Booking-title{
-    margin-top: 150px;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .Booking-title > h1{
-    font-size: 70px;
-    color: #fff;
-    letter-spacing: 0;
-    font-weight: 300;
-    font-family: Jost, serif;
+    font-size: 80px;
+  color: #fff;
+  letter-spacing: 0;
+  font-weight: 300;
+  text-transform: capitalize;
+  font-family: 'Shelia VNF';
 }
 
 

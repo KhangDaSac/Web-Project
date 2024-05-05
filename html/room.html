@@ -14,15 +14,29 @@
 <body>
     <div id="dynamic-navbar">
         <ul class="menu-list">
-            <li class="menu_item menu_item-logo"><a href="home.html"><img src="../images/logo.png" alt=""></a>
+            <li class="menu-item menu-item-logo">
+                <a href="home.html"><img src="../images/logo.png" alt="" /></a>
             </li>
             <li class="menu-item"><a href="home.html">TRANG CHỦ</a></li>
             <li class="menu-item"><a href="about-us.html">GIỚI THIỆU</a></li>
-            <li class="menu-item"><a href="service.html">DỊCH VỤ</a></li>
+            <li class="menu-item menu-item-service">
+                <a href="service.html">
+                    DỊCH VỤ
+                    <ul class="menu-item-detail-service">
+                        <li><a href="service-detail.html" onclick="Res()">NHÀ HÀNG</a></li>
+                        <li><a href="service-detail.html" onclick="SpaHotale()">SPA HOTALE</a></li>
+                        <li><a href="service-detail.html" onclick="SkyBar()">SKY BAR</a></li>
+                    </ul>
+                </a>
+            </li>
             <li class="menu-item"><a href="room.html">PHÒNG</a></li>
             <li class="menu-item"><a href="blog.html">DIỄN ĐÀN</a></li>
             <li class="menu-item"><a href="contact.html">LIÊN HỆ</a></li>
-            <li class="menu-item menu-item-login"><a href="signin.html">ĐĂNG NHẬP</a></li>
+            <li class="menu-item menu-item-login">
+                <a href="signin.html">
+                    ĐĂNG NHẬP
+                </a>
+            </li>
         </ul>
     </div>
     <div class="container-fluid  ">
@@ -122,6 +136,67 @@
             </div>
         </div>
     </footer>
+    <style>
+        /* menu cấp 2 */
+        .menu-item-detail-service {
+            display: none;
+            position: absolute;
+            left: 15px;
+            bottom: -100px;
+            background-color: white;
+            padding: 0px;
+            border: 1px solid #ccc;
+            z-index: 200;
+            color: #000;
+        }
+
+        .menu-item-detail-service>li {
+            font-size: 15px;
+            padding: 10px;
+        }
+
+        .menu-item-detail-service a {
+            color: #000;
+        }
+
+        .menu-item-detail-service>li:hover {
+            background-color: black;
+            color: #fff;
+        }
+
+        .menu-item-detail-service>li:hover a {
+            color: #fff;
+        }
+
+        .menu-item-service {
+            position: relative;
+        }
+
+        .menu-item-service:hover .menu-item-detail-service {
+            display: block;
+        }
+
+        /* Đăng xuất */
+        .menu-item-logout {
+            display: none;
+            position: absolute;
+            bottom: -25px;
+            left: 25px;
+            background-color: white;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .menu-item-login {
+            position: relative;
+        }
+
+        .menu-item-login:hover .menu-item-logout {
+            display: block;
+        }
+    </style>
+
     <script src="../js/jquery-3.4.1.min.js"></script>
     <script src="../bootstrap-5.3.3/js/bootstrap.min.js"></script>
     <script src="../js/room.js"></script>

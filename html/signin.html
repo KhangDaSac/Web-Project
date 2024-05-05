@@ -18,47 +18,54 @@
     <div class="container">
         <header class="header">
             <div class="header-main">
-              <div class="container-content">
-                <div class="header-top">
-                  <div class="header-top-item">
-                    <a href="" class="trencung">
-                        <i class="fa-solid fa-phone"></i> +(024) 2242 0777
-                    </a>
-                    <a href="" class="trencung">
-                      <i class="fa-solid fa-envelope"></i> nhom7@gmail.com
-                    </a>
-                  </div>
+                <div class="container-content">
+                    <div class="header-top">
+                        <div class="header-top-item">
+                            <a href="" class="trencung">
+                                <i class="fa-solid fa-phone"></i> +(024) 2242 0777
+                            </a>
+                            <a href="" class="trencung">
+                                <i class="fa-solid fa-envelope"></i> nhom7@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-content">
+                        <a href="" class="logo"></a>
+                        <nav class="menu">
+                            <ul class="menu-list">
+                                <li class="menu-item menu-item-logo">
+                                    <a href="home.html">
+                                        <img src="../images/logo.png" alt="" class="log" />
+                                    </a>
+                                </li>
+                                <li class="menu-item"><a href="home.html">TRANG CHỦ</a></li>
+                                <li class="menu-item">
+                                    <a href="about-us.html">GIỚI THIỆU</a>
+                                </li>
+                                <li class="menu-item menu-item-service">
+                                    <a href="service.html">
+                                        DỊCH VỤ
+                                        <ul class="menu-item-detail-service">
+                                            <li><a href="service-detail.html" onclick="Res()">NHÀ HÀNG</a></li>
+                                            <li><a href="service-detail.html" onclick="SpaHotale()">SPA HOTALE</a></li>
+                                            <li><a href="service-detail.html" onclick="SkyBar()">SKY BAR</a></li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="menu-item"><a href="room.html">PHÒNG</a></li>
+                                <li class="menu-item"><a href="blog.html">DIỄN ĐÀN</a></li>
+                                <li class="menu-item">
+                                    <a href="contact.html">LIÊN HỆ</a>
+                                </li>
+                                <li class="menu-item menu-item-login">
+                                    <a href="signup.html">ĐĂNG KÝ</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-                <div class="header-content">
-                  <a href="" class="logo"></a>
-                  <nav class="menu">
-                    <ul class="menu-list">
-                      <li class="menu-item menu-item-logo">
-                        <a href="home.html">
-                            <img src="../images/logo.png" alt="" class="log"/>
-                        </a>
-                      </li>
-                      <li class="menu-item"><a href="home.html">TRANG CHỦ</a></li>
-                      <li class="menu-item">
-                        <a href="about-us.html">GIỚI THIỆU</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="service.html">DỊCH VỤ</a>
-                      </li>
-                      <li class="menu-item"><a href="room.html">PHÒNG</a></li>
-                      <li class="menu-item"><a href="blog.html">DIỄN ĐÀN</a></li>
-                      <li class="menu-item">
-                        <a href="contact.html">LIÊN HỆ</a>
-                      </li>
-                      <li class="menu-item menu-item-login">
-                        <a href="signup.html">ĐĂNG KÝ</a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
             </div>
-          </header>
+        </header>
         <div class="banner-title">
             <h1>Đặt kỳ nghỉ của bạn</h1>
             <span>Đăng nhập</span>
@@ -126,10 +133,79 @@
             </div>
         </div>
     </footer>
+    <style>
+        a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        /* menu cấp 2 */
+        .menu-item-detail-service {
+            display: none;
+            position: absolute;
+            left: 15px;
+            bottom: -100px;
+            background-color: white;
+            padding: 0px;
+            border: 1px solid #ccc;
+            z-index: 200;
+            color: #000;
+        }
+
+        .menu-item-detail-service>li {
+            font-size: 15px;
+            padding: 10px;
+        }
+
+        .menu-item-detail-service a {
+            color: #000;
+        }
+
+        .menu-item-detail-service>li:hover {
+            background-color: black;
+            color: #fff;
+        }
+
+        .menu-item-detail-service>li:hover a {
+            color: #fff;
+        }
+
+        .menu-item-service {
+            position: relative;
+        }
+
+        .menu-item-service:hover .menu-item-detail-service {
+            display: block;
+        }
+
+        /* Đăng xuất */
+        .menu-item-logout {
+            display: none;
+            position: absolute;
+            bottom: -25px;
+            left: 25px;
+            background-color: white;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .menu-item-login {
+            position: relative;
+        }
+
+        .menu-item-login:hover .menu-item-logout {
+            display: block;
+        }
+    </style>
     <script>
 
         let listAcc = [
-            {'email': 'DaoPhucKhang090@gmail.com', 'password': 'DaoPhucKhang090@gmail.com', 'name': 'Đào Phúc Khang'}
+            { 'email': 'DaoPhucKhang090@gmail.com', 'password': 'DaoPhucKhang090@gmail.com', 'name': 'Đào Phúc Khang' }
         ];
 
         localStorage.setItem('listAcc', JSON.stringify(listAcc));
@@ -141,76 +217,76 @@
             let password = localStorage.getItem("password");
             let regemail = /^[A-Za-z]\w+@(gmail|yahoo|iuh|hotmail)(\.com){1}$/;
             let regpw = /^(?=.*[0-9])(?=.*[A-Z])(?=.*[!@#$%^&]).{8,}$/;
-            function check(reg,gtri){
-                if(reg.test(gtri)){
+            function check(reg, gtri) {
+                if (reg.test(gtri)) {
                     return true;
                 }
-                else{
+                else {
                     return false;
                 }
             }
-            function valid(){
-                let i=0;
-                let mk= $("#password").val();
+            function valid() {
+                let i = 0;
+                let mk = $("#password").val();
                 let mail = $("#email").val();
-                if(mail == ""){
+                if (mail == "") {
                     $("#eremail").html("Email là bắt buộc để đăng nhập");
-                    i=1;
+                    i = 1;
                 }
-                else if(!check(regemail, mail)){
+                else if (!check(regemail, mail)) {
                     $("#eremail").html("Email sai định dạng");
-                    i=1;
+                    i = 1;
                 }
-                if(mk == ""){
+                if (mk == "") {
                     $("#erpw").html("Mật khẩu là bắt buộc để đăng nhập");
-                    i=1;
+                    i = 1;
                 }
-                else if(!check(regpw, mk)){
+                else if (!check(regpw, mk)) {
                     $("#erpw").html("Mật khẩu phải từ 8 kí tự trở lên và có ít nhất 1 chữ cái in hoa và 1 kí tự đặc biệt");
-                    i=1;
+                    i = 1;
                 }
-                if(i==1){
+                if (i == 1) {
                     return false;
-                }else{
-                    i=0;
+                } else {
+                    i = 0;
                     return true;
                 }
             }
-            $("#email").blur(function (e) { 
+            $("#email").blur(function (e) {
                 e.preventDefault();
                 let mail = $("#email").val();
-                if(mail == ""){
+                if (mail == "") {
                     $("#eremail").html("Email là bắt buộc để đăng nhập");
                 }
-                else if(!check(regemail, mail)){
+                else if (!check(regemail, mail)) {
                     $("#eremail").html("Email sai định dạng");
                 }
-                else{
+                else {
                     $("#eremail").html("");
                 }
             });
-            $("#password").blur(function (e) { 
+            $("#password").blur(function (e) {
                 e.preventDefault();
-                let mk= $("#password").val();
-                if(mk == ""){
+                let mk = $("#password").val();
+                if (mk == "") {
                     $("#erpw").html("Mật khẩu là bắt buộc để đăng nhập");
                 }
-                else if(!check(regpw, mk)){
+                else if (!check(regpw, mk)) {
                     $("#erpw").html("Mật khẩu phải từ 8 kí tự trở lên và có ít nhất 1 chữ cái in hoa và 1 kí tự đặc biệt");
                 }
-                else{
+                else {
                     $("#erpw").html("");
                 }
             });
 
-            $("#btnsignin").click(function (e) { 
+            $("#btnsignin").click(function (e) {
                 e.preventDefault();
                 let bool = false;
                 let mail = $("#email").val();
-                let mk= $("#password").val();
-                if(valid()){
+                let mk = $("#password").val();
+                if (valid()) {
                     listAcc.forEach((acc) => {
-                        if(acc.email == mail && acc.password == mk){
+                        if (acc.email == mail && acc.password == mk) {
                             localStorage.setItem('currentAcc', JSON.stringify(acc));
                             alert("Đăng nhập thành công quay về trang chủ");
                             window.location.href = 'home.html';
@@ -218,7 +294,7 @@
                             return;
                         }
                     });
-                    if(bool == false){
+                    if (bool == false) {
                         alert("Tài khoản hoặc mật khẩu không hợp lệ");
                     }
                 }
@@ -226,4 +302,5 @@
         });
     </script>
 </body>
+
 </html>

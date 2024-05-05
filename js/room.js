@@ -59,7 +59,10 @@ listRooms.forEach((room) => {
   }
 });
 
-
+if(temp.length == 0){
+  alert('Không tìm thấy phòng phù hợp')
+  temp = listRooms;
+}
 
 let rooms = $("#rooms");
 

@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="../css/css-icon/css/sharp-solid.css"/>
     <link rel="stylesheet" href="../css/css-icon/css/sharp-regular.css"/>
     <link rel="stylesheet" href="../fonts/fonts.css">
-    <script src="../js/Booking.js"></script>
-
+    <script src="../js/home.js"></script>
+    
 </head>
 <body>
     <div class="container">
@@ -231,12 +231,14 @@
                                         <option value="">Ông</option>
                                         <option value="">Bà</option>
                                     </select>
+                                    <p></p>
                                 </div>
                             </td>
                             <td>
                                 <div>
                                     <p>Họ tên <span style="color: red;">*</span></p>
-                                    <input type="text">
+                                    <input type="text" id="ho-ten">
+                                    <p id="ho-ten-err" style="color: red;"></p>
                                 </div>
                             </td>
                         </tr>
@@ -244,13 +246,15 @@
                             <td>
                                 <div>
                                     <p>Điện thoại <span style="color: red;">*</span></p>
-                                    <input type="text">
+                                    <input type="text" id="dien-thoai">
+                                    <p id="dien-thoai-err" style="color: red;"></p>
                                 </div>
                             </td>
                             <td>
                                 <div>
                                     <p>Quốc gia<span style="color: red;">*</span></p>
-                                    <input type="text">
+                                    <input type="text" id="quoc-gia">
+                                    <p id="quoc-gia-err" style="color: red;"></p>
                                 </div>
                             </td>
                         </tr>
@@ -258,7 +262,8 @@
                             <td colspan="2">
                                 <div>
                                     <p>Email <span style="color: red;">*</span></p>
-                                    <input type="text">
+                                    <input type="text" id="email">
+                                    <p id="email-err" style="color: red;"></p>
                                 </div>
                             </td>
                         </tr>
@@ -273,9 +278,10 @@
                         <tr>
                             <td colspan="2">
                                 <div>
-                                    <input type="checkbox" class="checkbox"> <span>Tôi đã đọc và đồng ý với các điều khoản và điều kiện của khách sạn Khách sạn Hotale</span>
+                                    <input type="checkbox" class="checkbox" id="dieu-khoan"> <span>Tôi đã đọc và đồng ý với các điều khoản và điều kiện của khách sạn Khách sạn Hotale</span>
+                                    <p id="dieu-khoan-err" style="color: red;"></p>
                                     <br>
-                                    <button class="btn-send">Gửi</button>
+                                    <button class="btn-send" id="btn-send">Gửi</button>
                                 </div>
                             </td>
                         </tr>
@@ -315,4 +321,12 @@
                 </div>
             </footer>
     </div>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/all.js"></script>
+    <script src="../js/booking.js"></script>
+    <script>
+    $(document).ready(function () {
+      dangNhapThanhCong();
+    });
+    </script>
 </body>

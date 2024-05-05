@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/css-icon/css/sharp-solid.css"/>
     <link rel="stylesheet" href="../css/css-icon/css/sharp-regular.css"/>
     <link rel="stylesheet" href="../fonts/fonts.css">
-    <script src="../js/Paying.js"></script>
+    
 </head>
 <body>
     <div class="container">
@@ -70,6 +70,7 @@
                 <li><input type="radio" name="options"> <img src="../images/zalopay.webp" alt=""> Ví điện tử Zalopay</li>
                 <li><input type="radio" name="options"> <img src="../images/vnpay.png" alt=""> VNPay</li>
             </ul>
+            <p id="phuong-thuc-thanh-toan-err" style="color: red;"></p>
             <div>
                 <h2>Thông tin thanh toán</h2>
                 <table>
@@ -77,7 +78,8 @@
                         <td>
                             <div>
                                 <p>Tên trên thẻ <span>*</span></p>
-                                <input type="text">
+                                <input type="text" id="ten-the">
+                                <p id="ten-the-err" style="color: red;"></p>
                             </div>
                         </td>
                         <td> <div><img src="../images/atm.png" alt=""> <img src="../images/visa.png" alt=""><img src="../images/vnpay.png" alt=""></div></td>
@@ -86,7 +88,8 @@
                         <td>
                             <div>
                                 <p>Số thẻ<span>*</span></p>
-                                <input type="text">
+                                <input type="text" id="so-the">
+                                <p id="so-the-err" style="color: red;"></p>
                             </div>
                         </td>
                         <td> <div><img src="../images/recures.png" alt=""></div></td>
@@ -94,7 +97,8 @@
                     <tr>
                         <td>
                             <div>
-                                <p>Ngày hết hạn</p>
+                                <p>Thời gian hết hạn</p>
+                                Tháng:
                                 <select name="" id="">
                                     <option value="">1</option>
                                     <option value="">2</option>
@@ -109,6 +113,7 @@
                                     <option value="">11</option>
                                     <option value="">12</option>
                                 </select>
+                                Năm:
                                 <select name="" id="">
                                     <option value="">2024</option>
                                     <option value="">2025</option>
@@ -133,8 +138,9 @@
                     <tr>
                         <td>
                             <div>
-                                <p>Mã bảo mật <span>*</span></p>
-                                <input type="text">
+                                <p>Mã bảo mật (CVV) <span>*</span></p>
+                                <input type="text" id="ma-bao-mat">
+                                <p id="ma-bao-mat-err" style="color: red;"></p>
                             </div>
                         </td>
                         <td> </td>
@@ -143,7 +149,8 @@
                         <div>
                             <td colspan="2" class="row-big"> <div><p>Chính sách giá 1</p>
                             <div class="row4">
-                                <input type="checkbox"><p for="">Tôi đã đọc và đồng ý với những điều khoản trên</p></div>
+                                <input type="checkbox" id="dieu-khoan"><p for="">Tôi đã đọc và đồng ý với những điều khoản trên</p></div>
+                                <p id="dieu-khoan-err" style="color: red;"></p>
                             </div>
                         </td>
                                 
@@ -151,7 +158,7 @@
                         
                     </tr>
                     <tr class="row-end">
-                        <td colspan="2"><button>Thanh toán</button></td>
+                        <td colspan="2"><button id="btn-thanh-toan">Thanh toán</button></td>
                     </tr>
 
                 </table>
@@ -259,5 +266,13 @@
         </div>
     </footer>
 </div>
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/all.js"></script>
+<script src="../js/paying.js"></script>
+<script>
+$(document).ready(function () {
+  dangNhapThanhCong();
+});
+</script>
 </body>
 </html>

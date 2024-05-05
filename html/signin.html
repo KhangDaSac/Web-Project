@@ -127,7 +127,16 @@
         </div>
     </footer>
     <script>
+
+        let listAcc = [
+            {'email': 'DaoPhucKhang090@gmail.com', 'password': 'DaoPhucKhang090@gmail.com', 'name': 'Đào Phúc Khang'}
+        ];
+
+        localStorage.setItem('listAcc', JSON.stringify(listAcc));
         $(document).ready(function () {
+            var listAcc = JSON.parse(localStorage.getItem('listAcc'));
+            console.log(typeof listAcc);
+            console.log(listAcc[0].email);
             let email = localStorage.getItem("email");
             let password = localStorage.getItem("password");
             let regemail = /^[A-Za-z]\w+@(gmail|yahoo|iuh|hotmail)(\.com){1}$/;
@@ -196,22 +205,24 @@
 
             $("#btnsignin").click(function (e) { 
                 e.preventDefault();
+                let bool = false;
                 let mail = $("#email").val();
                 let mk= $("#password").val();
                 if(valid()){
-                    if(mail != email){
-                        $("#erpw").html("Tài khoản hoặc mật khẩu không chính xác");
-                    }
-                    else if(mk != password){
-                        $("#erpw").html("Tài khoản hoặc mật khẩu không chính xác");
-                    }
-                    else{
-                        alert("Đăng nhập thành công quay về trang chủ");
-                        let w = window.open("home.html");
+                    listAcc.forEach((acc) => {
+                        if(acc.email == mail && acc.password == mk){
+                            localStorage.setItem('currentAcc', JSON.stringify(acc));
+                            alert("Đăng nhập thành công quay về trang chủ");
+                            window.location.href = 'home.html';
+                            bool = true;
+                            return;
+                        }
+                    });
+                    if(bool == false){
+                        alert("Tài khoản hoặc mật khẩu không hợp lệ");
                     }
                 }
             });
-
         });
     </script>
 </body>

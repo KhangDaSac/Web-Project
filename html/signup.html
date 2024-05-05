@@ -137,9 +137,10 @@
             </div>
         </div>
     </footer>
-    <script src="../js/home.js">
     </script>
     <script>
+
+
         $(document).ready(function () {
             let regname = /^([A-Z][a-z]*\s)+([A-Z][a-z]*)$/;
             let regemail = /^[A-Za-z]\w+@(gmail|yahoo|iuh|hotmail)(\.com){1}$/;
@@ -262,11 +263,14 @@
                 if(valid()){                    
                     let email = $("#email").val();
                     let pw = $("#password").val();
-                    localStorage.setItem("email", email);
-                    localStorage.setItem("password", pw);
+                    let acc = {'email': email, 'password': pw, 'name': name};
+
+                    let list = JSON.parse(localStorage.getItem('listAcc'));
+
+                    list.push(acc);
+                    localStorage.setItem('listAcc', JSON.stringify(list));
                     alert('Đăng kí thành công! Quay trở lại trang đăng nhập');
-                    let w1 = window.close("singup.html");
-                    let w = window.open("signin.html");
+                    window.location.href = 'lognin.html';
                     
                 }
             });

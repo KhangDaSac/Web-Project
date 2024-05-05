@@ -46,6 +46,7 @@ let numPerson = +localStorage.getItem("numPerson");
 
 localStorage.removeItem("price");
 localStorage.removeItem("numPerson");
+
 let temp = [];
 listRooms.forEach((room) => {
   let price = parseInt(room.price.replace(/\D/g, ""));
@@ -58,9 +59,7 @@ listRooms.forEach((room) => {
   }
 });
 
-if (temp.length == 0) {
-  temp = listRooms;
-}
+
 
 let rooms = $("#rooms");
 

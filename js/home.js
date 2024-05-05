@@ -23,9 +23,8 @@ function Search_room() {
   let check_out = $("#check-out");
   let numPerson = $("#numPerson");
   let price = $("#price");
-  console.log(price)
   if (!check_in.val() || !check_out.val()) {
-    alert("vui lòng nhập thông tin ngày ngày đến và ngày đi");
+    alert("Vui lòng nhập thông tin ngày ngày đến và ngày đi!");
     return;
   }
 
@@ -57,7 +56,8 @@ function SpaHotale()
           localStorage.setItem("pp",b);
           localStorage.setItem("doianh",c);
       }
-      function Res()
+
+function Res()
       {
           let a1 ='Nhà hàng' ;
           let b1 ='Hệ thống sảnh tiệc lớn, linh hoạt, được đầu tư trang thiết bị hiện đại sẽ luôn là gợi ý tuyệt vời cho những tiệc cưới, hội nghị đẳng cấp. Hệ thống sảnh tiệc lớn, linh hoạt, được đầu tư trang thiết bị hiện đại sẽ luôn là gợi ý tuyệt vời cho những tiệc cưới, hội nghị đẳng cấp.';
@@ -73,7 +73,8 @@ function SpaHotale()
           localStorage.setItem("doianh",c);
           window.location.href = "service-detail.html";
       }
-      function SkyBar(){
+
+function SkyBar(){
           let c1='../images/service/bar.png'
           let a1='Sky bar'
           let b1='Hãy kỷ niệm khoảnh khắc của bạn bằng một trong những món cocktail nổi bật của chúng tôi hoặc nếu bạn thích, tuyển chọn các loại trà quốc tế và cà phê có nguồn gốc địa phương có sẵn nóng hoặc đá mát lạnh.<br> Giờ mở cửa: Hàng ngày từ 6 giờ chiều đến nửa đêm.'
@@ -87,4 +88,4 @@ function SpaHotale()
           localStorage.setItem("pp",b);
           localStorage.setItem("doianh",c);
           window.location.href = "service-detail.html";
-      }
+}

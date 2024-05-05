@@ -6,28 +6,34 @@ document.addEventListener("DOMContentLoaded", function () {
     var content1 = document.querySelector(".booking-content1");
     var content2 = document.querySelector(".booking-content2");
 
+    if(tab2 != null){
+        tab2.addEventListener("click", function () {
 
-    tab2.addEventListener("click", function () {
+            content1.classList.remove("active");
+            content2.classList.add("active");
+    
+    
+            tab1.classList.remove("active");
+            tab2.classList.add("active");
+    
+    
+        });
+    }
 
-        content1.classList.remove("active");
-        content2.classList.add("active");
+    if(tab1 != null){
 
+        tab1.addEventListener("click", function () {
 
-        tab1.classList.remove("active");
-        tab2.classList.add("active");
+            content2.classList.remove("active");
+            content1.classList.add("active");
+    
+            tab2.classList.remove("active");
+            tab1.classList.add("active");
+    
+    
+        });
+    }
 
-
-    });
-    tab1.addEventListener("click", function () {
-
-        content2.classList.remove("active");
-        content1.classList.add("active");
-
-        tab2.classList.remove("active");
-        tab1.classList.add("active");
-
-
-    });
 });
 $(document).ready(function () {
     $("#txtTen").blur(function () {
@@ -112,8 +118,8 @@ $(document).ready(function () {
 
 });
 function Search_room() {
-    let check_in = $("#CheckIn");
-    let check_out = $("#CheckOut");
+    let check_in = $("#check-in");
+    let check_out = $("#check-out");
     let numPerson = $("#numPerson");
     let price = $("#price");
     console.log(price)

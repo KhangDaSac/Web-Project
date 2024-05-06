@@ -6,31 +6,31 @@ document.addEventListener("DOMContentLoaded", function () {
     var content1 = document.querySelector(".booking-content1");
     var content2 = document.querySelector(".booking-content2");
 
-    if(tab2 != null){
+    if (tab2 != null) {
         tab2.addEventListener("click", function () {
 
             content1.classList.remove("active");
             content2.classList.add("active");
-    
-    
+
+
             tab1.classList.remove("active");
             tab2.classList.add("active");
-    
-    
+
+
         });
     }
 
-    if(tab1 != null){
+    if (tab1 != null) {
 
         tab1.addEventListener("click", function () {
 
             content2.classList.remove("active");
             content1.classList.add("active");
-    
+
             tab2.classList.remove("active");
             tab1.classList.add("active");
-    
-    
+
+
         });
     }
 

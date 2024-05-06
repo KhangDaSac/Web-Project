@@ -59,7 +59,7 @@ listRooms.forEach((room) => {
   }
 });
 
-if(temp.length == 0){
+if (temp.length == 0) {
   alert('Không tìm thấy phòng phù hợp')
   temp = listRooms;
 }

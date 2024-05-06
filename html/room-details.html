@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    
+
     <div id="dynamic-navbar">
 
         <ul class="menu-list">
@@ -68,11 +68,12 @@
                                     <li class="menu-item menu-item-service">
                                         <a href="service.html">
                                             DỊCH VỤ
-                                        <ul class="menu-item-detail-service" style="display: none;">
-                                            <li><a href="service-detail.html" onclick="Res()">NHÀ HÀNG</a></li>
-                                            <li><a href="service-detail.html" onclick="SpaHotale()">SPA HOTALE</a></li>
-                                            <li><a href="service-detail.html" onclick="SkyBar()">SKY BAR</a></li>
-                                        </ul>
+                                            <ul class="menu-item-detail-service" style="display: none;">
+                                                <li><a href="service-detail.html" onclick="Res()">NHÀ HÀNG</a></li>
+                                                <li><a href="service-detail.html" onclick="SpaHotale()">SPA HOTALE</a>
+                                                </li>
+                                                <li><a href="service-detail.html" onclick="SkyBar()">SKY BAR</a></li>
+                                            </ul>
                                         </a>
                                     </li>
                                     <li class="menu-item"><a href="room.html">PHÒNG</a></li>
@@ -391,14 +392,14 @@
                                                         <div class="form-group checkin-form">
                                                             <label for="">Ngày Đến</label>
                                                             <div class="value-space">
-                                                                <input type="date" name="checkInDate" id="CheckIn"
+                                                                <input type="date" name="checkInDate" id="check-in"
                                                                     class="form-control">
                                                             </div>
                                                         </div>
                                                         <div class="form-group checkout-form">
                                                             <label for="">Ngày đi</label>
                                                             <div class="value-space">
-                                                                <input type="date" name="checkOutDate" id="CheckOut"
+                                                                <input type="date" name="checkOutDate" id="check-out"
                                                                     class="form-control">
                                                             </div>
                                                         </div>
@@ -897,33 +898,33 @@
                 z-index: 200;
                 color: #000;
             }
-    
+
             .menu-item-detail-service>li {
                 font-size: 15px;
                 padding: 10px;
             }
-    
+
             .menu-item-detail-service a {
                 color: #000;
             }
-    
+
             .menu-item-detail-service>li:hover {
                 background-color: black;
                 color: #fff;
             }
-    
+
             .menu-item-detail-service>li:hover a {
                 color: #fff;
             }
-    
+
             .menu-item-service {
                 position: relative;
             }
-    
+
             .menu-item-service:hover .menu-item-detail-service {
                 display: block;
             }
-    
+
             /* Đăng xuất */
             .menu-item-logout {
                 display: none;
@@ -935,11 +936,11 @@
                 border: 1px solid #ccc;
                 border-radius: 5px;
             }
-    
+
             .menu-item-login {
                 position: relative;
             }
-    
+
             .menu-item-login:hover .menu-item-logout {
                 display: block;
             }

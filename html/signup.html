@@ -339,6 +339,7 @@
                 if (valid()) {
                     let email = $("#email").val();
                     let pw = $("#password").val();
+                    let name = $("#name").val();
                     let acc = { 'email': email, 'password': pw, 'name': name };
 
                     let list = JSON.parse(localStorage.getItem('listAcc'));
@@ -347,7 +348,10 @@
                     localStorage.setItem('listAcc', JSON.stringify(list));
                     alert('Đăng kí thành công! Quay trở lại trang đăng nhập');
                     window.location.href = 'signin.html';
+<<<<<<< HEAD
+=======
 
+>>>>>>> 6532d5bfe63a3b60983e4b6323447054cd639cdd
                 }
             });
         });

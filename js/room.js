@@ -59,8 +59,12 @@ listRooms.forEach((room) => {
   }
 });
 
+<<<<<<< HEAD
+if(temp.length == 0){
+=======
 if (temp.length == 0) {
   alert('Không tìm thấy phòng phù hợp')
+>>>>>>> 6532d5bfe63a3b60983e4b6323447054cd639cdd
   temp = listRooms;
 }
 
